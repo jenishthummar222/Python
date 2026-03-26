@@ -1,0 +1,69 @@
+-----------------JK----------------------------- 26/03/2026 -----------------------------JK----------------------------------------------
+
+PYTHON :-
+
+        --> it is widely used general purpose, high level prgraming language.
+        --> it was initly desiged by GUIDO VAN ROSSUM in 1991 and developed by python softwere foundation.
+        --> It was mainly developed for emphasis on code readablity, and it's syntax allows programmers to 
+            express concept in fewer line of code.
+        --> Python is a programming  language that lets you work qiukly and integrate systems morw effcienty.
+        --> Python is an interpreted, object-oriented, high-level Programing language with dynamic semantic.
+        --> It's high-level bulit in data structure, combined with dynamic typing and dynamic bindling , make it very attractive for 
+            Rapid Appication Development.
+
+        --> Python support modules and packages, which encourages progran modularity and code reuse.
+        --> The Python interpre and the extensive standerd library are available in source or binary form without charges for all 
+            major platforms and can be freely distributed.
+
+Why Python ::-
+
+        * Designed to be easy to learn and master *
+
+            --> Clean , clear syntax.
+            --> Very few keywords
+
+        *  Highly Portable *
+
+            --> Runs almost anywere --high end server and workstations , down to windowos CE User Machin independent byte-code.
+
+        ** Extensible **
+
+            --> Designed to be extensible using C/C++,
+            --> Allowing access to many external library.
+        
+        * Clean syntax plus high-level data type *
+
+            --> leads to first coding (First langiage in many  univercity)
+        
+        * Uses white-space to delimit blocks *
+
+        * Variable do not need declaretion *
+
+        * reduced development maintaenance *
+
+            ---> code is 2-10x shoter than c,c++,java.
+        
+        * Improved programing maintaenance *
+
+            --> code is extremly readable.
+
+        * Less Training* 
+            --> language is very essy.
+
+        --> An interpreter translate high-level instruction into an intermediate from , which it then executes.
+        --> in contrast a compiler translate high-level instruction directly into machine language.
+
+        --> to have an interpreter to imterpret and run program.
+
+        --> There are cretain online interpreter like http://codeoad.org/ that can be used to start python without installing an interpreter.
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+    print :-
+
+        --> print is functions in python.
+        --> using that print function we can display appropriate message in console screen
+
+        syntax :-
+
+            print("Hello I am Python")
