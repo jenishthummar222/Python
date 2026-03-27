@@ -1,4 +1,4 @@
------------------JK----------------------------- 26/03/2026 -----------------------------JK----------------------------------------------
++-----------------JK----------------------------- 26/03/2026 -----------------------------JK----------------------------------------------
 
 PYTHON :-
 
@@ -55,7 +55,8 @@ Why Python ::-
 
         --> to have an interpreter to imterpret and run program.
 
-        --> There are cretain online interpreter like http://codeoad.org/ that can be used to start python without installing an interpreter.
+        --> There are cretain online interpreter like http://codeoad.org/ that can be used to start python without 
+            installing an interpreter.
 
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
@@ -67,3 +68,62 @@ Why Python ::-
         syntax :-
 
             print("Hello I am Python")
+
+-----------------JK----------------------------- 27/03/2026 -----------------------------JK------------------------------------------JK----
+
+    To check python is installed in my system or not .?
+
+    win + r press 
+        |
+        V
+
+       cmd 
+    --------------
+    #pyrhon --version
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+    By default whenever we installed python it provide us IDLE
+
+    IDLE :-
+        integrate development Learning Inviroment.
+        ~> it is only use for learning purpose.
+
+    -> for professional development purpose we have to use IDE.
+
+    IDE :- 
+        ~> integrated development Inviroment
+
+        -> there is loat of IDEs available in market but python offical's IDE is pycharm.
+
+        -> but pycharm advance tools is paid mode so , 
+        ~> we use vs code. ot Antigravity.
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+Comments ::-
+
+    In python There are 2 way to define comments.
+
+    1} Single line comments :-
+            ~> which  is represent by #.
+            
+            # this is single line comment.
+    
+    2} multiline Comments :-
+            ~> which is represent by triple quotes (""")
+
+            """ 
+                this 
+                is
+                multi line comment
+            """
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+Variable :-
+    -> A name which can store a value.
+    -> in python there is no need to declare variable.
+    -> we can just take variable not store value into.
+
+    syntax:-
+        -> <variable_nm> value
