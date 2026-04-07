@@ -127,3 +127,228 @@ Variable :-
 
     syntax:-
         -> <variable_nm> value
+
+-----------------JK----------------------------- 28/03/2026 -----------------------------JK------------------------------------------JK----
+
+Datatype ::-
+        --> which type of value store in a variable it's called datatype.
+        --> there are mainly 2 type of data type.
+
+        Numeric                                         Charecters
+            |                                               |
+            V                                               V 
+    ---------------------------------                -------------------------
+    |                               |               |                        |
+    int                            Float           chr                    str(string)
+
+
+        --> bool (boolean) for true and false value.
+
+-----------------JK----------------------------- 30/03/2026 -----------------------------JK------------------------------------------JK----
+
+Operator :
+    -> to perform specific Operations we have to some specific symbols it's called Operator.
+    and to perform Operations between operands.
+
+      E.g :-
+            a+b
+        hear a and b are operands and + is an Operator
+
+    1] Arithmetic Operators ::-
+            ~> +,-,*,/,%,**(Exponentation) , //(Floor Division)
+
+    2] assignment Operators ::-
+            ~> =
+            
+            Shorter operator :-
+
+                ~> combination of Arithmetic and assignment operator.
+            
+                ~> += , -= , *= , /= , %= , **= , //=
+
+    3] Relastional Operators ::-
+            ~> < , > , <= , >= , == , !=
+
+    4] Logical Operators ::-
+            ~> and , or , not
+
+    5] Bitwise Operators ::-
+            ~> & , | , ^ , ~ , << , >>
+
+    6] Membership Operators ::-
+            ~> in , not in
+
+    7] Identity Operators ::-
+            ~> is , is not  
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+Conditional Statements ::-
+
+    There are manly 5 type of conditional statements
+
+        1) if statement
+        2) if .. else statement
+        3) elsif statement
+        4) nested if statement
+        5) match statement
+
+        =============================================
+
+        1) If Statement ::-
+                ~> when condition goes true statement will execute if part.
+
+                syntax:-
+
+                    if condition :
+                        statement
+                
+                Note :- ~> identation for if block.
+        
+        ===============================================
+
+        2) If .. Else Statement ::-
+                ~> when condition gose true it will execute if block and if condition gose false it will execute
+                    else part.
+
+                Syntax :-
+
+                    if condition 
+                        statement
+                    else:
+                        statement
+        
+        ===============================================
+
+        3) Elif Statement ::-
+                ~> there are no else if statement in python.
+                ~> we are using elif statement
+            
+                Syntax :-
+
+                    if condition:
+                        statement
+                    elif condition:
+                        statement
+                    elif condition:
+                        statement
+                    else:
+                        statement
+        
+        ===============================================
+
+        4) Nested If Statement ::-
+                ~> when condition inside the another condition it's called nested if statement.
+
+                syntax:-
+
+                    if condition:
+                        if condition:
+                            statement
+                        else:
+                            statement
+                    else:
+                        if condition:
+                            statement
+                        else:
+                            statement
+        
+        ===============================================
+
+        5) Match Statement ::-
+                ~> in python match is supported only after python 3.10+ version.
+                ~> it is smiller like switch case (java,c,c++), when case(kotlin)
+
+                Syntax:-
+                    -> match expression:
+                            case condition:
+                                statement
+                            case condition:
+                                statement
+                            case _:
+                                statement
+
+                case _:- represent defualt statement there is no such keyword default in match statement.
+
+                    when we want to apply multi choice selection at that time we can use match statement.
+
+-----------------JK----------------------------- 31/03/2026 -----------------------------JK------------------------------------------JK----
+    
+Looping Concept ::-
+
+    ~> When we want to repeat any value at that time we can use Looping concept.
+
+    ~> There are 2 types of Loop
+
+        1) for Loop
+        2) while Loop
+
+    ===============================================
+    1)For Loop ::-
+
+            ~> for loop is a sequence controlled loop.
+
+            Syntax:-
+
+                for var in sequence:
+                    statement
+        
+            range() : range is function is used to represent sequence
+
+                    ~> range([start],end,[steps]) :- hear, start and step is opentional.
+                    ~> By defualt range function start from 0 and icrement by step 1.
+
+-----------------JK----------------------------- 02/04/2026 -----------------------------JK------------------------------------------JK----
+    2) While Loop ::-
+
+            ~> while loop is an Entry controll loop.
+            ~> it check condition at entry level if condition goes true loop will execute otherwise 
+                loop will terminate.
+
+            Syntax:-
+                initlization
+                while condition:
+                    statement
+                    updation
+
+-----------------JK----------------------------- 03/04/2026 -----------------------------JK------------------------------------------JK----
+
+    3) Jumping Statement ::-
+
+            ~> There Are 3 jumping statement :-
+                i) break
+                ii) continue
+                iii) pass
+            
+            i) Break :-
+                    ~> breack the loop
+            
+                    Syntax:-    
+                        -> break 
+                
+            ii) Continue :-
+                    ~> it skip the statement but loop will continue.
+                
+                    Syntax :-
+                        -> continue
+            
+            iii) Pass :-
+                    ~> nothing to display Because of indentation.
+                    ~> we can't skip if block empty.
+
+                    Syntax:-
+                        -> pass 
+
+-----------------JK----------------------------- 04/04/2026 -----------------------------JK------------------------------------------JK----
+
+String ::-
+
+        ~> string is a collection of Charecters.
+        ~> which is represent b double qotes or single quotes
+
+        E.g:-
+            name = "python"
+                    OR 
+            name = 'java'
+
+-----------------JK----------------------------- 06/04/2026 -----------------------------JK------------------------------------------JK----
