@@ -351,4 +351,144 @@ String ::-
                     OR 
             name = 'java'
 
------------------JK----------------------------- 06/04/2026 -----------------------------JK------------------------------------------JK----
+-----------------JK----------------------------- 07/04/2026 -----------------------------JK------------------------------------------JK----
+Nested For Loop ::-
+
+        ~> when loop  inside the another loop it's called nested for loop.
+
+        Nested for loop::-
+
+            for var in sequence:
+                for var in sequence:
+                    statement
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+COLLECTION ::-
+
+    
+    ~> it is a most powerfull topic in python.
+    ~> which is like group which contain multiple values at same location.
+
+    ~> Type Of Collection 
+
+        1) list
+        2) tuple
+        3) set 
+        4) dictionary 
+
+-----------------JK----------------------------- 08/04/2026 -----------------------------JK------------------------------------------JK----
+
+    1) List ::-
+
+            ~> list is most powerfull type of collection
+            ~> list which is contain similer or dis-similer data type values.
+            ~> list is orderable, sequence, indexable, mutable(changeble) data type.
+            ~> list which is represent by [] braces.
+
+            Syntax :-
+
+                list = []  
+
+        --------------------------------------------
+        *==> Add New Element In Existing List <==*
+        --------------------------------------------
+
+           ~~>  There are three way to add element in list <~~
+
+            1) append() :-
+                    ~> to add new element in list at end of the list.
+
+                    Syntax :- list.appemd(new_elmet)
+
+            2) extend() :-
+                    ~> to add multiple elements as per list forment in exiesting list.
+
+                    Syntax :- list.extend(elem_1,elem_2,...)
+
+            3) insert() :- 
+                    ~> To add element in list at pertiqular index.
+
+                    Syntax :- list.insert(index, new_elmet)
+
+        --------------------------------------------
+        *==> Add New Element In Existing List <==*    
+        --------------------------------------------
+
+            ~~> There are 4 ways to remove or delete element from the list <~~
+
+            1) remove( ):-
+                    ~> using of remove method we can remove specific element from the existing list.
+
+                    E.g :-  li.remove(element)
+
+            2) pop() :-
+                    ~> by default pop method remove last elements from list.
+                    ~> it's return remove element.
+
+                    E.g :-  l.pop()
+
+                pop(idx):-
+                        ~> to remove specific value from specific index.
+
+                        E.g :- l1.pop(idx)
+
+            3) clear() :-
+                    ~> using of clear() we can remove all element from the list.
+
+                    E.g:-   l1.clear()
+
+            4) del :-
+                    ~> del is  keyword using of del keyword we can delete list from the memory.
+
+                    E.g :- del l1
+
+        ******************************************************************************
+
+        List Comprehension ::-
+
+                ~> the bast way to create list usig of loop in sorter way
+
+                Syntax ::-
+
+                    simple list Comprehension 
+
+                    list = [value loop]
+
+    =====================================================================================================
+   
+    2) Tuple ::-
+            ~> Tuple is an another concept or data type of collections type.
+            ~> tuple which is represnet by () braces.
+            ~> tuple which is orderables, indexable, sequence data type but immutable.
+            ~> it we can't change it's value.
+
+            Syntax:-
+
+                t1 =()
+
+                NOte:-  if we put only single value in tuple it is represent as a specific datatype not like tuple.
+
+                    Ex = t1=(15)
+
+                        it's not a tuple
+
+-----------------JK----------------------------- 11/04/2026 -----------------------------JK------------------------------------------JK----
+    3) Set ::-
+            ~> set is a collection data type.
+            ~> which is represent by {} braces.
+
+            ~> set is unorderable, unindexable, immutable, contain onlye unique value.
+    
+    =====================================================================================================
+   
+    4) Dictionary ::-
+            ~> it is a most powerfull concept of collection datatype.
+            ~> dictionary which is represent by {} braces.
+            ~> dictionary which is contain key and values in a pair.
+
+            Syntax:
+                dictionary ={
+                    'key' : "value"
+                    'key' : "value"
+                }
