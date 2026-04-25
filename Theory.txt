@@ -492,3 +492,147 @@ COLLECTION ::-
                     'key' : "value"
                     'key' : "value"
                 }
+
+            remove item:-
+
+                dict.pop("key")
+
+            # counter
+            # defaultdict
+
+-----------------JK----------------------------- 16/04/2026 -----------------------------JK------------------------------------------JK----
+
+FUNCTION ::-
+
+        ~> function is a block of code .
+        ~> that code are use again and again.
+        ~> using of function we can reduced our code.
+        ~> function which is provide reusablitiy.
+        ~> using it we can save our development time.
+
+        Syntax::-
+                ~> 
+                    def <function_nm>():
+                        stmt 
+                    
+                Note:- 
+                    def is a keyword using of def keyword we can define function.
+        
+    =====================================================================================================
+
+    There Are 2 type of function.
+
+        1] built-in-function:- 
+                ~> which is predefined functions.
+                    e.g:- print(),len(), max(), input()...
+
+        2] user-defined function:-
+                ~> which is defined by user as per the requirement
+
+                    E.g :-  
+                            def <function_nm>():
+                                stmt 
+    =====================================================================================================
+
+    Function Categories ::-
+
+        1] function without parameters and without return type
+
+        2] function with parameters and without return type
+
+        3] function without parameters and with return type
+
+        4] function with parameters and with return type
+
+-----------------JK----------------------------- 20/04/2026 -----------------------------JK------------------------------------------JK----
+    
+    => *args vs **kwargs
+
+    =====================================================================================================
+
+    => # positional args & keyword args 
+
+    =====================================================================================================
+    Lambda Function ::-
+            ~> it is a anonymous function.
+            ~> function without any nam it's called lambda function.
+            ~> using of lambda keyword we can defined lambda function.
+
+            Syntax :-
+                ~> var = lambda parameters  expression.
+
+            ~> lambda function can acess as many as parameters but can return single expression.
+    
+    =====================================================================================================
+
+    Map() ::-
+        ~> map function apply function on each iterator value.
+        ~> and return single object.
+        
+        Syntax :-
+            ~> map (function,iterator)
+        
+        ~> using map we don't need to use loop it automatically apply function to each element of iterator.
+
+-----------------JK----------------------------- 21/04/2026 -----------------------------JK------------------------------------------JK----
+
+    Filter() ::-
+        ~> filter function return only thoses element from an iterator which fullfill specific condition.
+        ~> when map :-
+                -> functin apply on each element and preform opreations each elements but filter  apply matchig only.
+    
+        Syntax:-
+
+            filter (functin,iterator)
+
+-----------------JK----------------------------- 22/04/2026 -----------------------------JK------------------------------------------JK----
+
+    Decorators ::-
+
+        ~> as we know that functon is an object.
+        ~> function can accept another function as a parameter and a function can return another function as return value.
+
+        * what is Decorators:-
+            ~> Decorator is a most powerfull topic of function.
+            ~> which is accept any function as a parameter and make it special function.
+
+        * when we can use decorator :-
+            ~> when we want to add on extra functionalitites to function before calling or after calling.
+            ~> we can use decorator.
+
+        Syntax :-
+            def myDecorator(myfun):
+                def wrapper():
+                    return wrapper
+                    
+            @myDecorator
+            def myfun():
+                ....
+
+-----------------JK----------------------------- 23/04/2026 -----------------------------JK------------------------------------------JK----
+MODULE ::-
+
+        ~> module is a file which is contain collection of logics or code and we can import that file as per our requirment.
+
+        There are mainly 3 type of modules 
+    
+        1) bulit-in module
+        2) user defined module 
+        3) third party module 
+
+    =====================================================================================================
+    1) bulit in module ::-
+            ~> which is predefined y python we just havde to import it and use it.
+
+            Syntax:-
+
+                import module_nm
+                    OR
+                from module_nm import functon_nm 
+                    OR 
+                from module_nm import * 
+                
+    =====================================================================================================
+
+    2) User Defined Module ::-
+            ~> 

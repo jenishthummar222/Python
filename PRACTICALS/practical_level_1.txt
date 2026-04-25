@@ -1,0 +1,2104 @@
+Q 1: Accept a number from the user and find the factorial of the number using a function with a parameter and return type.
+---------------------------------------------------------------------------------------------------------------
+        def factorial(num):
+            fact ,copy = 1,num       
+            while copy!=1:
+                fact *= copy
+                copy -= 1
+            return f"{num} Factorial is = {fact}"
+
+        num = int(input("Enter Your Number :- "))
+        print(factorial(num))
+
+---------------------------------------------------------------------------------------------------------------
+Q 2: Write a function that accepts a string and returns True if the string is a palindrome, and False otherwise.
+---------------------------------------------------------------------------------------------------------------
+    
+        def palindrom(str):
+            if str == str[::-1]:
+                return True
+            else:
+                return False
+
+        name = input("Enter Your String :- ")
+        print(palindrom(name))
+
+---------------------------------------------------------------------------------------------------------------
+Q 3: Write a function that accepts a list of numbers and returns the sum of all even numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def sum_Of_List(list):
+            sum = 0
+            for i in list:
+                if i % 2 == 0:
+                    sum+=i
+            return f"Sum of Total Even Elements is = {sum}"
+
+        count = int(input("Enter Total Elements :- "))
+        l1 = []
+        print()
+        for r in range(count):   
+            l1.append(int(input(f"Enter Your {r} Element :- ")))
+
+        print(sum_Of_List(l1))        
+
+---------------------------------------------------------------------------------------------------------------
+Q 4: Write a function that accepts a list of numbers and returns the maximum value in the list.	
+---------------------------------------------------------------------------------------------------------------
+
+        def maxNum_Of_List(list):
+            return(f"Max Number Is = {max(l1)}")
+
+        count = int(input("Enter Total Elements :- "))
+        l1 = []
+        for r in range(count):   
+            l1.append(int(input(f"Enter Your {r} Element :- ")))
+
+        print(maxNum_Of_List(l1))        
+
+---------------------------------------------------------------------------------------------------------------
+Q 5: Accept a number from the user and check if it is a prime number using a function with a parameter and return type.
+---------------------------------------------------------------------------------------------------------------
+        
+        def prime_num(num):    
+            for i in range(2,num):
+                if num%i==0:
+                    return f"{num} is not prime number"
+                    break
+                
+            return f"{num} is prime number"
+
+        number = int(input("Enter your Number :- "))
+        print(prime_num(number))     
+
+---------------------------------------------------------------------------------------------------------------
+Q 6: Write a function that accepts a string and a character, and returns the number of times the character appears in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def char_frequency(str,chr):
+            freq = 0
+            for ch in str:
+                if ch == chr:
+                    freq += 1
+            return f"{chr} is {freq} times occrs.."
+
+        str = input("Enter your String :- ")
+        chr = input("Enter Your Find Charector :- ")
+
+        print(char_frequency(str,chr))  
+
+---------------------------------------------------------------------------------------------------------------
+Q 7: Write a function that accepts a list of strings and returns a new list with each string reversed.
+---------------------------------------------------------------------------------------------------------------
+        
+        def revers_Str(str_list):
+            list = []
+            for str in str_list:
+                list.append(str[::-1])
+            return list
+
+
+        list = ["java","python","php","js","react js","c++"]
+
+        rev_list = revers_Str(list)
+
+        for i in rev_list:
+            print(i,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 8: Write a function that accepts a list of numbers and returns the average of the numbers.
+---------------------------------------------------------------------------------------------------------------
+
+        def avg_of_num(list):
+            return(f"AVG of Number = {sum(list)/len(list)}")
+
+        count = int(input("Enter Total Elements :- "))
+        l1 = []
+        for r in range(count):   
+            l1.append(int(input(f"Enter Your {r} Element :- ")))
+
+        print(avg_of_num(l1))   
+
+---------------------------------------------------------------------------------------------------------------
+Q 9:Accept a string from the user and print it in uppercase if the length of the string is greater than 5, else print it in lowercase using a function.
+---------------------------------------------------------------------------------------------------------------
+
+        def convert_str(str):
+            return str.upper() if len(str) <5 else str.lower()
+                
+
+        str = input("Enter Your string :- ")
+        print(convert_str(str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 10: Write a function that accepts a list of numbers and returns a new list with only the numbers that are divisible by 3.
+---------------------------------------------------------------------------------------------------------------
+
+        def div_by_3(num_list):
+            list1 = []
+            for n in num_list:
+                if n % 3 == 0:
+                    list1.append(n)
+            return list1
+
+        list = [5,3,6,9,15,20,60,2]
+        dev_3_li = div_by_3(list)
+
+        for num in dev_3_li:
+            print(num,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 11: Write a function that accepts a list of numbers and returns a new list with the squares of all the numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def squares(num_list):
+            squ = []
+            for num in num_list:
+                squ.append(num*num)
+            return squ
+
+
+        li = [2,7,5,3,50,9,10]
+
+        square = squares(li)
+
+        for n in square:
+            print(n,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 12: Write a function that accepts a string and counts how many vowels are in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def vowels(str):
+            count = 0
+            for chr in str:
+                if "a" == chr or "e" == chr or "i" == chr or "o" == chr or "u" == chr:
+                    count+=1
+            print(f"Total Vowel Is = {count}")
+
+        vowels("jenishooeqw,sa cvrlei oa shs cu")
+
+---------------------------------------------------------------------------------------------------------------
+Q 13: Write a function that accepts a number and prints its multiplication table from 1 to 10.
+---------------------------------------------------------------------------------------------------------------
+
+        def table(num):
+            for i in range(1,11):
+                print(f"{num} x {i} = {num*i}")
+
+        table(5)
+
+---------------------------------------------------------------------------------------------------------------
+Q 14: Write a function that accepts a list of strings and returns the longest string in the list.
+---------------------------------------------------------------------------------------------------------------
+        def longest_str(str_list):
+            max = len(str_list[0])
+            long_st = str_list[0]
+            for str in str_list:
+                if max < len(str):
+                    long_st = str
+            return f"Longest String is = {long_st}"
+
+
+        list = ["java have long","aram he","whh kya bat he","to kese ho ap log","ram ram"]
+
+        print(longest_str(list))
+
+---------------------------------------------------------------------------------------------------------------
+Q 15: Write a function that accepts a number and checks if it is an Armstrong number.
+---------------------------------------------------------------------------------------------------------------
+
+        def check_armstrong(num):
+            copy,sum = num,0
+
+            while copy != 0:
+                rem = copy % 10 
+                sum += rem ** len(num)        
+                copy = int(copy / 10)
+                
+            return f"{num} is Armstrong Number\n" if num == sum else f"{num} is Not Armstrong Number\n"
+        
+
+        print(check_armstrong(407))
+
+---------------------------------------------------------------------------------------------------------------
+Q 16: Write a function that accepts a number and returns the sum of its digits.
+---------------------------------------------------------------------------------------------------------------
+
+        def sum_of_digit(num):
+            copy,sum = num,0
+
+            while(copy != 0):
+                sum += copy%10
+                copy //= 10                 # // get int value , if you use / it's get float value
+            
+            return f"{num} Digit sum is {sum}"
+
+        print(sum_of_digit(684))
+
+---------------------------------------------------------------------------------------------------------------
+Q 17: Write a function that accepts a string and returns the string in alternating uppercase and lowercase characters.
+---------------------------------------------------------------------------------------------------------------
+
+        def alternating_str(str):
+            update_str =""
+
+            for i in range(len(str)):
+                if i % 2 != 0:
+                    update_str += str[i].upper()
+                else:
+                    update_str += str[i].lower()
+
+            return f"Updated String Is {update_str}"
+
+
+        print(alternating_str("jenish"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 18: Write a function that accepts a list of integers and returns the second largest number in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def second_elem(num_list):
+            num_list.sort(reverse=True)
+            return f" Secound Max Number is :- {num_list[1]} "                
+
+        print(second_elem([50,10,30,40,25,5,55,60,80,20,4]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 19: Write a function that accepts a list of numbers and returns the product of all the numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        # product means multipication of total list items. 
+
+        def total_product(num_list):
+            product = 1
+
+            for i in num_list:
+                product *= i
+            
+            return f"Total Product is = {product}"
+
+        print(total_product([50,10,20,4]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 20: Write a function that accepts a list of strings and returns a new list with only the strings that have an odd length.
+---------------------------------------------------------------------------------------------------------------
+
+        def odd_lenth(str_list):
+            odd_list = []
+
+            for str in str_list:
+                if len(str) % 2 != 0:
+                    odd_list.append(str)
+            
+            return odd_list
+
+        list = ["java have long","aram he","whh kya bat he","to kese ho ap log","ram ram"]
+
+        odd_lenth_li = odd_lenth(list)
+
+        for str in odd_lenth_li:
+            print(str,end=" | ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 21: Write a function that accepts a string and returns the first non-repeating character in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def non_Repeating_char(str):
+            non_rep_str = ""
+            for char in str:
+                if char not in non_rep_str:
+                    non_rep_str += char 
+            return f"first non-repeating character is || {non_rep_str} ||"
+
+        print(non_Repeating_char("hello, this is python"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 22: Write a function that accepts a string and a substring, and returns True if the substring is found in the string, otherwise False.
+---------------------------------------------------------------------------------------------------------------
+
+        def check_str(str,substr):
+            return "True" if str.find(substr) else "False"
+            
+
+        print(check_str("Hii, this is python, do you know about it.","it"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 23: Write a function that accepts a list of integers and returns the list sorted in descending order.
+---------------------------------------------------------------------------------------------------------------
+
+        def sort_desc(num_list):
+            num_list.sort(reverse = True)
+            return num_list
+
+        l1 = [50 , 80, 30 , 70, 90, 1 ,8 ,22]
+
+        sort = sort_desc(l1)
+
+        for i in sort:
+            print(i,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 24: Write a function that accepts a list of numbers and returns the number of prime numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def prime_num_list (num_list):
+            count = 0
+            for num in num_list:
+                flag = 0
+                for i in range(2,num//2):
+                    if num%i == 0:
+                        flag = 1
+                        break
+                if flag == 0:
+                    count += 1            
+            
+            return f"Total Prime Number in list is = {count}"
+
+        li = [2 , 5,8,3,9,10,11]
+
+        print(prime_num_list(li))
+
+---------------------------------------------------------------------------------------------------------------
+Q 25: Write a function that accepts a list of numbers and returns the number of negative numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def number_of_nagative(num_list):
+            count = 0
+            for num in num_list:
+                if num < 0:
+                    count += 1
+            return f"Total Nagatives Number in List Is = {count}"
+
+        lt = [-20,5,80,-222,10,-5,-7,60,70]
+
+        print(number_of_nagative(lt))
+
+---------------------------------------------------------------------------------------------------------------
+Q 26: Write a function that accepts a string and returns the number of words in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def number_of_words(str):
+            count = 0
+            for char in str.lower():
+                if char >= "a" and char <= "z":
+                    count+=1
+            return f"Total Charetor In String is = {count}"
+
+        str = "Hii, this is python"
+        print(number_of_words(str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 27: Write a function that accepts two strings and checks if one string is an anagram of the other.
+---------------------------------------------------------------------------------------------------------------
+
+        def check_anagram(str1,str2):
+
+            str1 = str1.replace(" ","").lower()
+            str2 = str2.replace(" ","").lower()
+
+            dict1,dict2 ={},{}    
+
+            for char in str1:
+                if char not in dict1:
+                    dict1[char] = 1
+                else:
+                    dict1[char] += 1
+            
+            for char in str2:
+                if char not in dict2:
+                    dict2[char] = 1
+                else:
+                    dict2[char] += 1
+            
+
+            return "It is Anagram" if dict1 ==  dict2 else "It is Not Anagram"
+
+        print(check_anagram("A gentleman","Elegant man"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 28: Write a function that accepts a string and removes all duplicate characters from the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_duplicate(str):
+            remove_dup =""
+            for char in str:
+                if char not in remove_dup:
+                    remove_dup += char
+            return f"After Remove Duplicate Charector :- {remove_dup}"
+
+        str = "hello , i am python , how are you"
+
+        print(remove_duplicate(str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 29: Write a function that accepts a list of integers and returns the sum of all numbers greater than 10.
+---------------------------------------------------------------------------------------------------------------
+
+        def sum_of_greter_10(num_list):
+            sum =0
+            for i in num_list:
+                if i >= 10:
+                    sum += i
+            return f"{sum} :- Sum of List Which value is grater then 10 "
+
+        print(sum_of_greter_10([5,3,10,6,70,80,82,94,4,2,22]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 30: Write a function that accepts a list of strings and returns the total number of characters in all strings.
+---------------------------------------------------------------------------------------------------------------
+
+        def number_of_words(str_list):
+            list =[]
+            for str in str_list:
+                count = 0
+                for char in str.lower():
+                    if char >= "a" and char <= "z":
+                        count+=1
+                list.append(f"| {str} |total word is = {count}")
+            return list
+
+        list_str = ["hii hello","How are you","i am python","welcome to python world.."]
+
+        print(number_of_words(list_str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 31: Write a function that accepts a string and returns the number of times a given word appears in the string.
+---------------------------------------------------------------------------------------------------------------
+
+       def word_occurs(str):
+            str = list(str)
+            list1 = []
+            for i in range(len(str)-1):
+                count = 1        
+                for j in range(i+1,len(str)):            
+                    if str[i] == str[j]:
+                        count += 1
+                        str[j] = "*"
+                if str[i] >= "a" and str[i] <= "z":
+                    list1.append(f"{str[i]} is occure : {count} times")
+                    
+            return list1
+
+
+        str = "hello how are you , i am python.."
+
+        for st in word_occurs(str):
+            print(st)
+
+---------------------------------------------------------------------------------------------------------------
+Q 32: Write a function that accepts a list of strings and returns a new list where each string is capitalized.
+---------------------------------------------------------------------------------------------------------------
+
+        def capitalize_str(str_list):
+            change=[]
+            for str in str_list:
+                change.append(str.capitalize())
+            return change
+
+        str_list = ["hello","hOW","javA","pyTHOn","pHp","ReAcT","HeLLo"]
+
+        for str in capitalize_str(str_list):
+            print(str,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 33: Write a function that accepts a list of numbers and returns a new list with all the numbers that are divisible by both 2 and 3.
+---------------------------------------------------------------------------------------------------------------
+
+        def div_by_2_3(num_list):
+            num_li = []
+
+            for num in num_list:
+                if num % 2 == 0 and num % 3 == 0:
+                    num_li.append(num)
+            
+            return num_li
+
+        num = [10,15,6,30,40,18,20,50]
+
+        for i in div_by_2_3(num):
+            print(i,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 34: Write a function that accepts a string and returns True if the string is a valid email address (contains "@" and "."), otherwise False.
+---------------------------------------------------------------------------------------------------------------
+
+        def valid_email(str):
+            if "@" in str and "." in str:
+                return True
+            else:
+                return False
+
+        str = "jenish@gmilcom"
+        print(valid_email(str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 35: Write a function that accepts a list of integers and returns the count of even numbers in the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def number_of_even(num_list):
+            count = 0
+            for num in num_list:
+                if num % 2 == 0:
+                    count += 1
+            return f"Total Even Number in List Is = {count}"
+
+        lt = [-20,5,80,-222,10,-5,-7,60,70]
+
+        print(number_of_even(lt))
+
+---------------------------------------------------------------------------------------------------------------
+Q 36: Write a function that accepts a string and checks if it contains only numeric characters.
+---------------------------------------------------------------------------------------------------------------
+
+        def if_numeric(str):
+            return True if str.isnumeric() else False
+
+        str = "123"
+
+        print(if_numeric(str))
+
+---------------------------------------------------------------------------------------------------------------
+Q 37: Write a function that accepts a string and returns a dictionary where the keys are the characters and the values are the counts of those characters in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def word_occurs(str):
+            dic ={}
+            for char in str.lower():
+                if char >= "a" and char <= "z":
+                    if char not in dic:
+                        dic[char] = 1
+                    else:
+                        dic[char] += 1
+            return dic 
+
+
+        str = "hello how are you , i am python.."
+
+        for k,v in word_occurs(str).items():
+            print(f"{k} is Occur : {v} Times")
+
+---------------------------------------------------------------------------------------------------------------
+Q 38: Write a function that accepts a list of integers and returns a new list with all the positive numbers squared.
+---------------------------------------------------------------------------------------------------------------
+
+        def positive_squer(num_list):
+            pos_li=[]
+            for num in num_list:
+                if num > 0 :
+                    pos_li.append(num ** 2)
+            return pos_li
+
+        li = [-5,8,-2,3,-20,10,4]
+
+        for num in positive_squer(li):
+            print(num,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 39: Write a function that accepts a list of strings and returns a list of the strings with their lengths.
+---------------------------------------------------------------------------------------------------------------
+
+        def lenth_of_str(str_list):
+            lenth = []
+            for str in str_list:
+                lenth.append(f"|{str} | lenth is {len(str)}")
+            return lenth
+
+        str_list = ["hello","hOW","javA","pyTHOn","pHp","ReAcT","HeLLo"]
+
+        for str in lenth_of_str(str_list):
+            print(str)
+
+---------------------------------------------------------------------------------------------------------------
+Q 40: Write a function that accepts a number and prints whether it is a perfect number (a number that is equal to the sum of its divisors, excluding the number itself). 
+---------------------------------------------------------------------------------------------------------------
+
+        #  6 = 1 + 2 + 3       // 6 is divied by 1 2 3 and [1+2+3]=6  so 6 is perfact number
+
+        def perfect_num (num):
+            sum = 1
+            for i in range(2,num):
+                if num % i == 0:
+                    sum += i
+            return f"{num} Is Perfact Number." if sum == num else f"{num} is Not Perfact Number."
+
+
+        print(perfect_num(28))
+
+---------------------------------------------------------------------------------------------------------------
+Q 41: Write a function that accepts a string and returns the string with all vowels removed.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_vowels(str):
+            remove_vowels = ""
+            for char in str.lower():
+                if char != 'a' and char != 'e' and char != 'i' and char != "o" and char != "u":
+                    remove_vowels += char
+            return f"After Removee Vowels :- {remove_vowels}"
+
+        print(remove_vowels("Hello! i am JEnish"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 42: Write a function that accepts a list of numbers and returns a new list where each number is divided by 2.
+---------------------------------------------------------------------------------------------------------------
+
+        def div_by_2 (num_list):
+            n_list = []
+
+            for num in num_list:
+                n_list.append(num/2)
+            return n_list
+
+        num = [50,2,6,30,3,22,4,7,75,99]
+
+        for i in div_by_2(num):
+            print(i,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 43: Write a function that accepts a list of numbers and returns the average of the numbers, excluding any zero values.
+---------------------------------------------------------------------------------------------------------------
+
+        def average_of_numbers(num_list):
+            non_zero = [i for i in num_list if i > 0]       #List Comprehension
+            return f"Average Of Total Number Is :- {sum(non_zero)/len(non_zero):.2f}"
+
+
+        num_list =[1, 2, 0, 4, 0] 
+
+        print(average_of_numbers(num_list))
+
+---------------------------------------------------------------------------------------------------------------
+Q 44: Write a function that accepts two strings and returns the common characters between them.
+---------------------------------------------------------------------------------------------------------------
+
+        def common_characters(str1,str2):
+
+            str1 = set(str1.lower())
+            str2 = set(str2.lower())
+            str3 = []
+            for c1 in str1:
+                for c2 in str2:
+                    if c1 not in str3 and c1 == c2 and c2>"a" and c2 <"z":
+                        str3.append(c1)
+                        break
+
+            return(str3)
+
+        print("\nThis Characters Are Comman..\n",end="  ")
+        for ch in common_characters("hioi o shdjdwd ","bhyio sd wdwws "):
+            print(ch,end="  ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 45: Write a function that accepts a string and returns the longest word in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def longest_word(str1):
+            str1 = str1.split(" ")
+
+            longest_word = []
+            lenth = 0
+
+            for i in range(len(str1)):
+                if lenth <= len(str1[i]):
+                    if lenth < len(str1[i]):
+                        lenth = len(str1[i])
+                        longest_word.clear()
+                        longest_word.append(str1[i])                
+                    else:
+                        longest_word.append(str1[i])              
+                        
+            return longest_word    
+
+        str1 = "hello world , hooww are you i amama python "
+
+        print("Longest Word Is : ")
+        for word in longest_word(str1):
+            print(word,end="  ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 46: Write a function that accepts a list of integers and returns the median value of the list.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_median(num_list):
+            num_list.sort()      
+            mid = len(num_list)//2
+
+            if mid % 2 == 0:       
+                return f"Median Value Is {(num_list[mid-1]+num_list[mid]) / 2}"
+            else : 
+                return f"Median Value Is {num_list[mid]}"
+
+        num_list = [4,2,3,1]
+
+        print(find_median(num_list))
+
+---------------------------------------------------------------------------------------------------------------
+Q 47: Write a function that accepts a list of numbers and returns the smallest number that is divisible by both 4 and 5.
+---------------------------------------------------------------------------------------------------------------
+
+        def smallest_number_div_by_4_5(num_list):    
+            num_list.sort(reverse=True)
+            small = num_list[0]
+            falg = 0
+
+            for num in num_list:
+                
+                if num % 4 == 0 and num % 5 == 0:
+                    if small >= num:
+                        small = num
+                        falg = 1
+                        
+            if falg == 1 :
+                return f"Smallest Number in given list , Which diveded by 4 & 5 :- {small}"
+            else:
+                return f"Not Found Smallest Number in given list"
+
+        data = [ 39 ,80 , 2 , 3, 40]
+
+        print(smallest_number_div_by_4_5(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 48: Write a function that accepts a number and returns a list of all the divisors of the number.
+---------------------------------------------------------------------------------------------------------------
+
+        def list_of_divisors(number):
+            num_list = [1]
+
+            for i in range(2,number):
+                if number % i == 0:
+                    num_list.append(i)
+            num_list.append(number)
+            return num_list
+
+        data  = 15
+
+        for i in list_of_divisors(data):
+            print(i,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 49: Write a function that accepts a string and returns the string with each word reversed, but the order of the words remains the same.
+---------------------------------------------------------------------------------------------------------------
+
+        def rev_word(str1):
+            str1 = str1[::-1].split(" ")
+            rev_str = ""
+
+            for char in str1:
+                rev_str = char +" "+rev_str
+            
+            return rev_str       
+
+        print(rev_word("hello , world"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 50: Write a function that accepts a list of strings and returns a new list containing only the strings that start with a vowel.
+---------------------------------------------------------------------------------------------------------------
+
+        def start_with_vowel(str_list):
+            vowel = []
+            for ch in str_list:
+                if ch[0].lower() == "a" or ch[0].lower() == "e" or ch[0].lower() == "i" or ch[0].lower() == "o" or ch[0].lower() == "u" :
+                    vowel.append(ch)
+            return vowel
+
+
+        data = ["ram","lakhan","any","ellipsis","janki","orchid"]
+
+        for char in start_with_vowel(data):
+            print(char,end=" ")
+
+---------------------------------------------------------------------------------------------------------------
+Q 51: Email Address Validator :- 
+Write a function is_valid_email(email) that accepts an email address as a string and checks if it follows a valid format (contains "@" and "."). Return True if valid, otherwise False.
+---------------------------------------------------------------------------------------------------------------
+
+        def is_valid_email(email):
+            return True if "@" in email and "." in email else False
+
+        email = "jenish@gmail.com"
+
+        if is_valid_email(email):
+            print("Valid Email")
+        else:
+            print("Invalid Email..")
+
+---------------------------------------------------------------------------------------------------------------
+Q 52: Sum of Digits in a String
+Write a function sum_of_digits_in_string(s) that accepts a string containing alphanumeric characters and returns the sum of all digits found in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def sum_of_digits_in_string(s):
+            sum = 0
+
+            for ch in s:
+                if ch>="0" and ch <="9" :
+                    sum += int(ch)
+
+            return f"SUm of Total Digit in string = {sum}" 
+
+
+        data = "hello 1 5 9 is mo number call 73 092"
+
+        print(sum_of_digits_in_string(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 53: Remove Duplicate Words
+Write a function remove_duplicate_words(sentence) that accepts a string with multiple words and returns a new string where all duplicate words are removed while maintaining the original order of words.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_duplicate_words(sentence):
+            sentence = sentence.lower().split(" ")
+            words = []
+            words_str = ""
+            for word in sentence:
+                if word not in words:
+                    words.append(word)
+                    words_str += word +" "
+                        
+            return words_str
+
+        data = "This is a test this is only a test"
+
+        print(remove_duplicate_words(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 54: Student Grading System
+Write a function calculate_grade(marks) that accepts the marks of a student (out of 100) and returns the grade as per the following scale:
+
+90 and above: "A"
+80 to 89: "B"
+70 to 79: "C"
+60 to 69: "D"
+Below 60: "F"
+---------------------------------------------------------------------------------------------------------------
+
+        def calculate_grade(marks):
+
+            return ["A" if marks <= 100 and marks > 90 else "B" 
+            if marks <= 90 and marks > 80 else "C" 
+            if marks <= 80 and marks > 70 else "D" 
+            if marks <= 70 and marks >= 60 else "F"]
+
+
+        marks = int(input("Enter your Marks :- "))    
+
+        print(f"Your Grade Is :- {(calculate_grade(marks))[0]}")
+
+---------------------------------------------------------------------------------------------------------------
+Q 55: Remove Whitespace from a String :Write a function remove_whitespace(s) that accepts a string and returns the string with all leading, trailing, and extra spaces between words removed.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_whitespace(s):
+            s = s.split()
+            withoutSpace = ""
+            for ch in s:
+                withoutSpace += ch+" "
+            return withoutSpace
+            
+        data = "       hi i py th       on  "
+
+        print(remove_whitespace(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 56: Count Words in a Sentence :Write a function count_words(sentence) that accepts a sentence and returns the number of words in the sentence.
+---------------------------------------------------------------------------------------------------------------
+
+    from collections import Counter
+        def count_words(sentence):
+            c = sum(Counter(sentence.split()).values())
+            return(c)
+
+    print(count_words("hello i am python. "))
+
+---------------------------------------------------------------------------------------------------------------
+Q 57: Find Missing Number in Sequence
+Write a function find_missing_number(numbers) that accepts a list of numbers from 1 to N, with one number missing. The function should return the missing number.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_missing_number(numbers_list):
+            missing_list = []
+            numbers_list.sort()
+            for i in range(0,numbers_list[len(numbers_list)-1]):              # 1,2,4,5,6
+                if i+1 != numbers_list[i]:
+                    return i+1
+            return "Nothing Is Missing "
+
+        data = [4,2,1,5,3,6,9,8]
+
+        print(f"Missing Number Is :- {find_missing_number(data)}")
+
+---------------------------------------------------------------------------------------------------------------
+Q 58: Find Common Elements in Two Lists
+Write a function find_common_elements(list1, list2) that accepts two lists and returns a list containing the common elements from both lists.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_common_elements(list1, list2):
+            comman = []
+            for i in list1:
+                for j in list2:
+                    if i == j:
+                        comman.append(i)
+                        break
+            print(comman)
+
+
+        l1 = [10 , 50 ,60 ,70,55,22 ]
+
+        l2 = [50,22,80,75,99,2]
+
+        find_common_elements(l1,l2)
+
+---------------------------------------------------------------------------------------------------------------
+Q 59: Sum of Positive and Negative Numbers
+Write a function sum_positive_and_negative(lst) that accepts a list of integers and returns a tuple with the sum of all positive numbers and the sum of all negative numbers.
+---------------------------------------------------------------------------------------------------------------
+
+        def sum_positive_and_negative(lst):
+            pos = 0
+            nag = 0
+            
+            for i in lst:
+                if i > 0:
+                    pos += i
+                else :
+                    nag += i
+
+            return (pos,nag)
+
+
+        data = [5 ,3,-5,-10,80,-22,99,41,-7]
+
+        print(sum_positive_and_negative(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 60: Check if a String is a Substring
+Write a function is_substring(str1, str2) that accepts two strings and checks if the first string is a substring of the second string. Return True or False.
+---------------------------------------------------------------------------------------------------------------
+
+    def is_substring(str1, str2):
+        str1=str1.lower().strip()
+        str2=str2.lower().strip()
+        if str1 in str2 :
+            return True 
+        elif str2 in str1:
+            return True 
+        else :
+            return False
+        
+
+    str1 = "Hii I am python"
+    str2 = "  python"
+
+    print(is_substring(str1,str2))    
+
+---------------------------------------------------------------------------------------------------------------
+Q 61: Sort List of Tuples by Second Element
+Write a function sort_tuples(lst) that accepts a list of tuples, and sorts the list based on the second element of each tuple in ascending order.
+---------------------------------------------------------------------------------------------------------------
+
+        def sort_tuples(lst):
+    
+            for i in range(len(lst)-1):
+                max = lst[i][1]
+                for j in range(i+1,len(lst)):
+                    if max > lst[j][1]:
+                        max = lst[j][1]
+                        temp = lst[i]
+                        lst[i] = lst[j]
+                        lst[j] = temp     
+
+            return lst       
+
+
+
+        data = [
+            (10,50,30),
+            (80,60,20),
+            (10,20,30),
+            (20,90,70),
+            (110,101,102),
+            (90,30,70),
+            (30,10,50)
+        ]
+
+        for dt in sort_tuples(data):
+            print(dt)  
+
+---------------------------------------------------------------------------------------------------------------
+Q 62: Generate a List of Prime Numbers
+Write a function generate_primes(n) that accepts a number n and returns a list of all prime numbers less than or equal to n.
+---------------------------------------------------------------------------------------------------------------
+
+        def generate_primes(n):
+            prime = []
+            i = 1
+            while i <= n:
+                flag = 0
+                for k in range(2,i):
+                    if i % k == 0:
+                        flag = 1
+                if flag == 0:
+                    prime.append(i)
+                i+=1
+            return prime
+
+        print(generate_primes(20))  
+
+---------------------------------------------------------------------------------------------------------------
+Q 63: Fibonacci Sequence
+Write a function generate_fibonacci(n) that accepts a number n and returns a list containing the first n numbers of the Fibonacci sequence.
+---------------------------------------------------------------------------------------------------------------
+        
+        def generate_fibonacci(n):
+            fibo = []
+            i = 1
+            while i <= n:
+                j , mul= 1,1
+                while j <= i:
+                    mul *= j
+                    j += 1
+                i += 1
+                
+                fibo.append(mul)
+            return  fibo
+
+        print(generate_fibonacci(10))
+
+---------------------------------------------------------------------------------------------------------------
+Q 64: Merge Two Lists Alternately
+Write a function merge_alternate(list1, list2) that accepts two lists of the same length and returns a new list by merging them alternately.
+---------------------------------------------------------------------------------------------------------------
+
+        def merge_alternate(list1, list2):
+            alternate_li = []
+            l1,l2 = 0,0
+            len1 = len(list1)
+            len2 = len(list2)
+            print(len1," ",len2)
+            for i in range ((len(list1)+len(list2))):
+                if i % 2 != 0:
+                    if l2 < len2:
+                        alternate_li.append(list2[l2])
+                        l2 += 1
+                        print("l2 = ",l2)
+                    else:
+                        alternate_li.append(list1[l1]) 
+                        l1 += 1
+                        print("l1= ",l1)
+                else :
+                    if l1 < len1:
+                        alternate_li.append(list1[l1]) 
+                        l1 += 1
+                        print("l1= ",l1)
+                    else:
+                        alternate_li.append(list2[l2])
+                        l2 += 1
+                        print("l2 = ",l2)
+            print(alternate_li)
+
+        data1 = [20,40]
+        data2 = [10,30,50,70,90]
+
+
+        merge_alternate(data1,data2)
+
+    ******************  Way 2 ************************
+        def merge_alternate(list1, list2):
+            alternate_li = []
+            i=0
+            while i < len(list1) or i < len(list2):    #9
+                if i < len(list1):
+                    alternate_li.append(list1[i])
+                    
+                if i < len(list2):
+                    alternate_li.append(list2[i])
+                i += 1
+
+            print(alternate_li)
+
+
+        data1 = [20,40]
+        data2 = [10,30,50,70,90]
+
+        merge_alternate(data1,data2)
+
+---------------------------------------------------------------------------------------------------------------
+Q 65: Count Specific Character Occurrences
+Write a function count_character(string, char) that accepts a string and a character, and returns the number of times the character appears in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def count_character(string, char):
+            total = 0
+            for ch in string:
+                if ch == char:
+                    total += 1
+            return total
+
+        string = "hello how are your python,"
+
+        print(count_character(string,"o"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 66: Concatenate Strings with a Separator
+Write a function concatenate_with_separator(lst, separator) that accepts a list of strings and a separator string, then returns a new string where all elements of the list are joined using the separator.
+---------------------------------------------------------------------------------------------------------------
+
+        def concatenate_with_separator(lst, separator):
+            string = ""
+            for val in lst:        
+                if val == lst[len(lst)-1]:
+                    string += val
+                else :
+                    string += val+separator 
+
+            return string
+
+        data = ["10","50","hello","60","java","python"]
+
+        separator = "."
+
+        print(concatenate_with_separator(data,separator))
+
+---------------------------------------------------------------------------------------------------------------
+Q 67: Reverse a List
+Write a function reverse_list(lst) that accepts a list and returns the list in reverse order.
+---------------------------------------------------------------------------------------------------------------
+
+        def reverse_list(lst):
+            return lst[::-1]
+
+        data = ["10","50","hello","60","java","python"]
+
+        print(reverse_list(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 68: Generate Random Password
+Write a function generate_password(length) that accepts a length as an argument and returns a randomly generated password of that length consisting of uppercase letters, lowercase letters, and digits.
+---------------------------------------------------------------------------------------------------------------
+
+        import random
+
+        def generate_password(length):
+
+            if length < 3:
+                return "Length must be greater then 3"
+                
+            password = ""
+            upper  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            number = "0123456789"
+            lower  = "abcdefghijklmnopqrstuvwxyz"       
+
+            all_char = upper + number +lower   
+
+            for i in range(length):
+                if i%3==0:
+                    password += random.choice(upper)   
+                if i % 2==0:
+                    password += random.choice(number)
+                else: 
+                    password += random.choice(lower) 
+            return password    
+
+        print(generate_password(9))
+
+---------------------------------------------------------------------------------------------------------------
+Q 69: Find the First Repeating Element
+Write a function find_first_repeating_element(lst) that accepts a list of integers and returns the first element that repeats. If no element repeats, return None.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_first_repeating_element(lst):
+            for i in range(len(lst)-1):
+                for j in range(i+1,len(lst)):
+                    if lst[i]==lst[j]:
+                        return lst[i]
+            
+            return None
+
+        data = [50,22,40,3,1,50,90,22]
+
+        print(find_first_repeating_element(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 70: Sort Strings by Length
+Write a function sort_by_length(lst) that accepts a list of strings and sorts the strings by their lengths in ascending order.
+---------------------------------------------------------------------------------------------------------------
+
+        def sort_by_length(lst):
+            for i in range(len(lst)-1):
+                for j in range(i+1,len(lst)):
+                    if len(lst[i]) > len(lst[j]):
+                        temp = lst[i]
+                        lst[i] = lst[j]
+                        lst[j] = temp
+            return lst
+
+        data = ["python","java","c++","reactjs","html"]
+
+        print(sort_by_length(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 71: Merge Two Dictionaries
+Write a function merge_dicts(dict1, dict2) that accepts two dictionaries and returns a single dictionary that contains the merged key-value pairs from both dictionaries.
+---------------------------------------------------------------------------------------------------------------
+
+        def merge_dicts(dict1, dict2):
+            merg_dict = {}
+            
+            for key,val in dict1.items():
+                for k,v in dict2.items():
+                    if key == k:
+                        merg_dict[key] = [val,v]
+                        #print(key," ",val," + ",k," ",v)
+                        
+                    else:
+                        #print(key," ",val," + ",k," ",v)
+                        if k not in dict1.keys():
+                            merg_dict[k] = v
+                        elif key not in dict2.keys():
+                            merg_dict[key] = val                
+
+            return merg_dict
+
+        dict1 = {   
+            "name":"ram",    
+            "age":25  ,
+            "city":"ayodhya"    
+        }
+        dict2={  
+            "name":"ravan",  
+            "age":50,
+            "city":"lanka",
+            "bhakt":"shive"
+        }
+
+        print(merge_dicts(dict1,dict2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 72: Check if Two Lists are Anagrams
+Write a function are_anagrams(list1, list2) that accepts two lists of strings and checks if one list is an anagram of the other (i.e., the lists contain the same elements, but possibly in different orders).
+---------------------------------------------------------------------------------------------------------------
+
+        def are_anagrams(list1, list2):
+            dict1 = {}
+            dict2 = {}
+
+            for st in list1:
+                for ch in st.replace(" ",""):
+                    if ch not in dict1:
+                        dict1[ch] = 1
+                    else:
+                        dict1[ch] += 1  
+
+            for st in list2:
+                for ch in st.replace(" ",""):
+                    if ch not in dict2:
+                        dict2[ch] = 1
+                    else:
+                        dict2[ch] += 1
+            return "list is an anagram " if dict1==dict2 else "list is not an anagram"
+
+
+        lst1 = ["th is","the","i s","py th on"]
+        lst2 = ["the"," python ","this","is"]
+
+        print(are_anagrams(lst1,lst2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 73: Flatten a Nested List
+Write a function flatten_list(nested_list) that accepts a nested list (list containing other lists) and returns a flat list containing all the elements.
+---------------------------------------------------------------------------------------------------------------
+
+        def flatten_list(nested_list):
+            flat_list = []
+            for i in nested_list:
+                if type(i) == list:
+                    flat_list.extend(flatten_list(i))
+                else:
+                    flat_list.append(i)
+            return flat_list
+
+
+        nested = [1, [2, 3], [4, [5, 6]], 7]
+
+        print(flatten_list(nested))
+
+---------------------------------------------------------------------------------------------------------------
+Q 74: Print Prime Numbers in a Range
+Write a function print_primes_in_range(start, end) that accepts two numbers and prints all prime numbers between start and end (inclusive).
+---------------------------------------------------------------------------------------------------------------
+
+        def print_primes_in_range(start, end):  
+            prime_list = []
+            for i in range(start,end+1):
+                flag = 0
+                for j in range(2,i):
+                    if i % j==0:
+                        flag = 1 
+                if flag == 0:            
+                    prime_list.append(i)
+            return prime_list
+
+        print(print_primes_in_range(10,100))
+
+---------------------------------------------------------------------------------------------------------------
+Q 75: Find the Longest Word in a Sentence
+Write a function longest_word(sentence) that accepts a sentence and returns the longest word in the sentence.
+---------------------------------------------------------------------------------------------------------------
+
+        def longest_word(sentence):
+            sentence = sentence.split()
+            long_word = 0    
+            string = ""
+            for word in sentence:
+                if len(word) > long_word:
+
+                    string = word
+
+            print(word)       
+
+        longest_word("hello word i im python")
+
+---------------------------------------------------------------------------------------------------------------
+Q 76: Convert a String to Title Case
+Write a function to_title_case(sentence) that accepts a string and returns the string in title case (the first letter of each word capitalized).
+---------------------------------------------------------------------------------------------------------------
+
+        def to_title_case(sentence):
+            print(sentence.title())
+
+        to_title_case("heloo how are you")
+
+---------------------------------------------------------------------------------------------------------------
+Q 77: Count the Occurrence of Each Character
+Write a function count_character_occurrences(string) that accepts a string and returns a dictionary with the count of each character in the string.
+---------------------------------------------------------------------------------------------------------------
+
+        def count_character_occurrences(string):
+            count_dict = {}
+
+            for ch in string:
+                if ch not in count_dict:
+                    count_dict[ch] = 1
+                else:
+                    count_dict[ch] += 1
+
+            return count_dict
+
+        print(count_character_occurrences("hello world, i am python"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 78: Calculate Simple Interest
+Write a function calculate_simple_interest(principal, rate, time) that accepts the principal, rate of interest, and time, and returns the calculated simple interest.
+---------------------------------------------------------------------------------------------------------------
+
+        def  calculate_simple_interest(principal, rate, time):
+            interest = (principal * rate * time ) /100
+
+            return interest
+
+        print(f"{calculate_simple_interest(100000,8.8,2):.2f}")
+
+---------------------------------------------------------------------------------------------------------------
+Q 79: Find Unique Elements in List
+Write a function find_unique_elements(lst) that accepts a list and returns a new list containing only the unique elements from the original list.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_unique_elements(lst):
+            unique = []
+            
+            for i in lst:
+                if i not in unique:
+                    unique.append(i)
+
+            return unique
+
+        data=[10,50,80,60,10,80]
+
+        print(find_unique_elements(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 80: Generate Multiplication Table
+Write a function generate_multiplication_table(n) that accepts a number n and prints its multiplication table (from 1 to 10).
+---------------------------------------------------------------------------------------------------------------
+
+        def generate_multiplication_table(n):
+            for i in range(1,11):
+                print(f"{n} * {i} = {n*i}")
+            
+        generate_multiplication_table(5)
+
+---------------------------------------------------------------------------------------------------------------
+Q 81: Create a Dictionary from Two Lists
+Write a function create_dict(keys, values) that accepts two lists, keys and values, and returns a dictionary where the keys are from the first list and the values are from the second list.
+---------------------------------------------------------------------------------------------------------------
+
+        def create_dict(keys, values):
+            return dict(zip(keys,values))
+
+        li1 = [1,2,3,4,5]
+        li2 = ["one","two","three","four","five"]
+
+        print(create_dict(li1,li2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 82: Check if Two Strings are Anagrams
+Write a function is_anagram(str1, str2) that accepts two strings and checks if they are anagrams of each other (i.e., they contain the same characters in different orders).
+---------------------------------------------------------------------------------------------------------------
+
+        def is_anagram(str1,str2):
+
+            str1 = str1.replace(" ","").lower()
+            str2 = str2.replace(" ","").lower()
+
+            dict1,dict2 ={},{}    
+
+            for char in str1:
+                if char not in dict1:
+                    dict1[char] = 1
+                else:
+                    dict1[char] += 1
+            
+            for char in str2:
+                if char not in dict2:
+                    dict2[char] = 1
+                else:
+                    dict2[char] += 1
+            
+
+            return "It is Anagram" if dict1 ==  dict2 else "It is Not Anagram"
+
+        print(check_anagram("A gentleman","Elegant man"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 83: Count Occurrences of Words in a Sentence
+Write a function count_word_occurrences(sentence) that accepts a sentence and returns a dictionary with the count of each word in the sentence.
+---------------------------------------------------------------------------------------------------------------
+
+        def count_word_occurrences(sentence):
+            count_word = {}
+            sentence = sentence.split()
+            for word in sentence:
+                if word not in count_word:
+                    count_word[word] = 1
+                else:
+                    count_word[word] += 1
+            return count_word
+
+        print(count_word_occurrences("hello i am python , python is most usable laanguage."))
+
+---------------------------------------------------------------------------------------------------------------
+Q 84: Remove Duplicates from a List of Strings
+Write a function remove_duplicates(lst) that accepts a list of strings and returns a new list with duplicate strings removed.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_duplicates(lst): 
+            duplicate_remov = []
+            for i in lst:
+                if i not in duplicate_remov:
+                    duplicate_remov.append(i)
+                    
+            return duplicate_remov
+
+        print(remove_duplicates([10,50,10,30,10,50,20]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 85: Convert Fahrenheit to Celsius
+Write a function fahrenheit_to_celsius(fahrenheit) that accepts a temperature in Fahrenheit and converts it to Celsius.
+---------------------------------------------------------------------------------------------------------------
+
+        def fahrenheit_to_celsius(fahrenheit):
+            celsius = (fahrenheit - 32) * (5 / 9)
+            return celsius
+
+        print(fahrenheit_to_celsius(98.6))
+
+---------------------------------------------------------------------------------------------------------------
+Q 86: Find the Most Frequent Element in a List
+Write a function find_most_frequent(lst) that accepts a list of elements and returns the most frequent element in the list. If there are multiple frequent elements, return any one of them.
+---------------------------------------------------------------------------------------------------------------
+
+        def find_most_frequent(lst):
+            count = 0
+            find = 0
+            for i in range(len(lst)-1):
+                frequent = 0
+                for j in range(i+1,len(lst)):
+                    if lst[i] == lst[j]:
+                        frequent += 1
+                if frequent > count:
+                    count = frequent
+                    find = lst[i]
+            return find
+
+        print(find_most_frequent([10,20,10,30,50,50,10,80,70,80,50,10]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 87: Merge Two Dictionaries
+Write a function merge_dicts(dict1, dict2) that accepts two dictionaries and merges them into one. If there are overlapping keys, the values from the second dictionary should overwrite the values from the first.
+---------------------------------------------------------------------------------------------------------------
+
+        def merge_dicts(dict1, dict2):
+            return dict1 | dict2
+
+        d1 = {"a": 1, "b": 2}
+        d2 = {"b": 5, "c": 3}
+
+        print(merge_dicts(d1, d2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 88: Count the Occurrence of Each Item in a List
+Write a function count_items(lst) that accepts a list of items and returns a dictionary where the keys are the items from the list, and the values are the number of times each item appears.
+---------------------------------------------------------------------------------------------------------------
+
+        def count_items(lst):
+            count_item = {}    
+            for item in lst:
+                if item not in count_item:
+                    count_item[item] = 1
+                else:
+                    count_item[item] += 1
+            return count_item
+
+        print(count_items([1, 2, 2, 3, 1, 1]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 89: Create a Dictionary from Two Lists
+Write a function create_dict(keys, values) that accepts two lists: one containing keys and the other containing values. The function should return a dictionary with the keys from the first list and the corresponding values from the second list.
+---------------------------------------------------------------------------------------------------------------
+
+        def create_dict(keys, values):
+            return dict(zip(keys,values))
+
+        li1 = [1,2,3,4,5]
+        li2 = ["one","two","three","four","five"]
+
+        print(create_dict(li1,li2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 90: Remove Duplicates from a List and Keep Order
+Write a function remove_duplicates(lst) that accepts a list and removes any duplicate elements while keeping the original order of the elements.
+-----------------------------------------------------------------------------------------------------
+
+        def remove_duplicates(lst): 
+            duplicate_remov = []
+            for i in lst:
+                if i not in duplicate_remov:
+                    duplicate_remov.append(i)
+                    
+            return duplicate_remov
+
+        print(remove_duplicates([10,50,10,30,10,50,20]))
+
+---------------------------------------------------------------------------------------------------------------
+Q 91: Sort a Dictionary by Value
+Write a function sort_dict_by_value(d) that accepts a dictionary and returns a new dictionary sorted by its values in ascending order.
+-----------------------------------------------------------------------------------------------------
+
+        def sort_dict_by_value(d):
+            data = list((d.values()))
+            data.sort()
+            sorts = {}
+            for i in data :
+                print(i)
+                for k,v in dict1.items():        
+                    if i == v:
+                        sorts[k] = v
+
+            return sorts
+
+
+        dict1 = {
+            "name":"rahul",
+            "city":"junagadh",
+            "last_name":"chavda"
+        }
+
+        print(sort_dict_by_value(dict1))
+
+---------------------------------------------------------------------------------------------------------------
+Q 92: Sum All Values in a Dictionary
+Write a function sum_dict_values(d) that accepts a dictionary where the values are numbers. The function should return the sum of all values in the dictionary.
+-----------------------------------------------------------------------------------------------------
+
+        def sum_dict_values(d):
+            sum = 0
+
+            for data in d:
+                sum += d[data]
+            return sum
+
+        data = {
+            "a": 30,
+            "b": 10,
+            "c": 20
+        }
+
+        print(sum_dict_values(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 93: Find the Key with the Maximum Value in a Dictionary
+Write a function find_max_key(d) that accepts a dictionary and returns the key that has the highest value. If there are multiple keys with the same maximum value, return any one of them.
+-----------------------------------------------------------------------------------------------------
+
+        def find_max_key(d):
+            max_val = 0
+            keys = ""  
+
+            for key,val in d.items():
+                if max_val < val :
+                    max_val = val
+                    keys = key
+
+            return f"{keys} = {d[keys]}"
+
+        data = {
+            "a": 30,
+            "b": 10,
+            "c": 20,
+            "d": 50
+        }
+
+        print(find_max_key(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 94: List of Keys with Minimum Value
+Write a function min_value_keys(d) that accepts a dictionary and returns a list of keys that have the minimum value in the dictionary.
+-----------------------------------------------------------------------------------------------------
+
+        def min_value_keys(d):
+            max_val = list(d.values())[0]
+            keys = ""  
+
+            for key,val in d.items():
+                if max_val > val :
+                    max_val = val
+                    keys = key
+
+            return f"{keys} = {d[keys]}"
+
+        data = {
+            "a": 30,
+            "b": 10,
+            "c": 20,
+            "d": 50
+        }
+
+        print(min_value_keys(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 95: Combine Multiple Lists into a Dictionary
+Write a function combine_lists_to_dict(keys, values) that accepts two lists, one containing keys and the other containing values. The function should combine them into a dictionary and return it. If there are more values than keys, ignore the extra values.
+-----------------------------------------------------------------------------------------------------
+
+        def combine_lists_to_dict(keys, values):
+            dict1 = dict(zip(keys,values))
+            return dict1
+
+
+        key = ["a","b","c","d","e","f","g"]
+        value = [10,20,30,40,50,60]
+
+        print(combine_lists_to_dict(key,value))
+
+---------------------------------------------------------------------------------------------------------------
+Q 96: Check if a Dictionary Contains a Specific Key
+Write a function contains_key(d, key) that accepts a dictionary and a key. It should return True if the key exists in the dictionary and False otherwise.
+-----------------------------------------------------------------------------------------------------
+
+        def contains_key(d, key):
+            return True if key in d else False
+
+        data = {
+                    "a": 30,
+                    "b": 10,
+                    "c": 20,
+                    "d": 50
+                }
+
+        print(contains_key(data,"g"))
+
+---------------------------------------------------------------------------------------------------------------
+Q 97: Flatten a List of Lists
+Write a function flatten_list_of_lists(lst) that accepts a list of lists (a nested list) and returns a flat list containing all the elements of the inner lists.
+-----------------------------------------------------------------------------------------------------
+
+        def flatten_list_of_lists(lst):
+            flatten = []
+            for i in lst :
+                if type(i) == list:
+                    flatten.extend(flatten_list_of_lists(i))
+                else:
+                    flatten.append(i)
+            return flatten
+
+        data = [10,20,[30,40],[50,[60,70],80],90]
+
+        print(flatten_list_of_lists(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 98: Find the Difference Between Two Lists
+Write a function find_difference(lst1, lst2) that accepts two lists and returns a new list containing elements that are in the first list but not in the second.
+-----------------------------------------------------------------------------------------------------
+
+        def find_difference(lst1, lst2):
+            find = [i for i in lst1 if i not in lst2]
+            return find
+
+        l1 = [10,50,90,70,80]
+        
+        l2 = [20,40,50,80,90,10]
+
+        print(find_difference(l1,l2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 99: Group List Elements by Frequency
+Write a function group_by_frequency(lst) that accepts a list and groups the elements based on their frequency. The function should return a dictionary where the keys are the frequencies and the values are lists of elements that occur that many times.
+-----------------------------------------------------------------------------------------------------
+
+        def group_by_frequency(lst):
+            frequency = {}
+            change = "*" if type(lst[0]) == int else 0
+            for i in range(len(lst)-1):
+                count = 1
+                if lst[i] != change:
+                    for j in range(i+1,len(lst)):
+                        if lst[i] == lst[j]:
+                            count += 1
+                            lst[j]=change
+                    if count in frequency.keys():
+                        frequency[count].append(lst[i])
+                    else :
+                        frequency[count] = [lst[i]]
+
+            return frequency
+
+        lst = [12, 45, 12, 67, 89, 45, 23, 12, 90, 67, 45, 23, 56, 78, 90, 12, 34, 56, 78, 90,
+            11, 22, 33, 44, 55, 66, 77, 88, 99, 11, 22, 33, 44, 55, 66, 77, 88, 99,
+            100, 101, 102, 103, 104, 105, 12, 45, 67, 89, 23, 56]
+
+        print(group_by_frequency(lst))
+
+---------------------------------------------------------------------------------------------------------------
+Q 100: Find the Common Keys in Two Dictionaries
+Write a function find_common_keys(dict1, dict2) that accepts two dictionaries and returns a list of keys that appear in both dictionaries.
+-----------------------------------------------------------------------------------------------------
+
+        def find_common_keys(dict1, dict2):
+            li = list(dict1.keys() & dict2.keys())
+            print(li)
+
+        data = {
+                "a": 30,
+                "b": 10,
+                "c": 20,
+                "d": 50
+            }
+
+        data2 = {
+            "f": 50,
+            "c": 10,
+            "g": 20,
+            "d": 50
+        }
+
+        find_common_keys(data,data2)
+
+---------------------------------------------------------------------------------------------------------------
+Q 101: Update Dictionary Values Based on Another Dictionary
+Write a function update_dict(d1, d2) that accepts two dictionaries. It should update the values of d1 with the values from d2 where the keys match. If a key from d2 does not exist in d1, it should be added.
+-----------------------------------------------------------------------------------------------------
+
+        def update_dict(d1, d2):
+            return dict(d1 | d2)
+
+        data = {
+                "a": 30,
+                "b": 10,
+                "c": 20,
+                "d": 50
+            }
+
+        data2 = {
+            "f": 50,
+            "c": 10,
+            "g": 20,
+            "d": 100
+        }
+
+        print(update_dict(data,data2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 102: Find the Longest Key in a Dictionary
+Write a function longest_key(d) that accepts a dictionary and returns the key with the longest length.
+-----------------------------------------------------------------------------------------------------
+
+        def longest_key(d):
+            long = len(list(d.keys())[0])
+            keys = ""
+            for k in d.keys():
+                if long <= len(k):
+                    long = len(k)
+                    keys = k 
+            
+            return f"{keys} = {long}"
+
+        data = {
+                "ajiro": 30,
+                "b": 10,
+                "abc": 20,
+                "dgfdh": 50
+            }
+
+        print(longest_key(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q  103: Check if a List Contains Only Unique Elements
+Write a function is_unique(lst) that accepts a list and returns True if all the elements are unique, and False if any element appears more than once.
+-----------------------------------------------------------------------------------------------------
+
+        def is_unique(lst):
+            for i in range(len(lst)-1):
+                for j in range(i+1,len(lst)):
+                    if lst[i] == lst[j]:
+                        return False
+
+            return True
+
+        data = [10,50,60,70,50]
+        print(is_unique(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 104: Convert a Dictionary to a List of Tuples
+Write a function dict_to_tuples(d) that accepts a dictionary and returns a list of tuples where each tuple contains a key-value pair from the dictionary.
+-----------------------------------------------------------------------------------------------------
+
+        def dict_to_tuples(d):
+            return [(k,v) for k,v in d.items()]
+
+        data = {
+                "a": 30,
+                "b": 10,
+                "c": 20,
+                }
+
+        print(dict_to_tuples(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 105: Find Missing Numbers in a List
+Write a function find_missing_numbers(lst, n) that accepts a list of integers and a number n. The list contains integers from 1 to n with some numbers missing. The function should return a list of the missing numbers.
+-----------------------------------------------------------------------------------------------------
+
+        def find_missing_numbers(lst, n):
+            return [i for i in range(1,n+1) if i not in lst]
+
+        data = [1,3,4,5,7,9,12,16]
+        n = 20
+
+        print(find_missing_numbers(data,n))
+
+---------------------------------------------------------------------------------------------------------------
+Q 106: Split a List into Two Lists
+Write a function split_list(lst) that accepts a list and splits it into two lists. The first list should contain the first half of the elements, and the second list should contain the second half.
+-----------------------------------------------------------------------------------------------------
+
+        def split_list(lst):
+            l1 =[]
+            l2 = []
+            
+            for i in range(len(lst)):
+                if (i < len(lst)//2):
+                    l1.append(lst[i])
+                else:
+                    l2.append(lst[i])
+            return [l1,l2]
+
+        data = [1,3,4,5,7,9,12,16]
+
+        print(split_list(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q  107: Sum All Even Keys in a Dictionary
+Write a function sum_even_keys(d) that accepts a dictionary with integers as keys and returns the sum of all keys that are even numbers.
+-----------------------------------------------------------------------------------------------------
+
+        def sum_even_keys(d):
+            sum = 0
+            for i in d.keys():
+                if i % 2 == 0:
+                    sum += i
+            
+            return f"Keys Sum are {sum}"
+
+        data = {1:10, 2:20, 3:30,4:40,5:50,6:60}
+
+        print(sum_even_keys(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 108: Create a Frequency Dictionary from a List
+Write a function create_frequency_dict(lst) that accepts a list and returns a dictionary where the keys are the elements of the list, and the values are the count of how often each element appears.
+-----------------------------------------------------------------------------------------------------
+
+        def create_frequency_dict(lst):
+            frequency = {}
+            change = "*" if type(lst[0]) == int else 0
+            for i in range(len(lst)-1):
+                count = 1
+                if lst[i] != change:
+                    for j in range(i+1,len(lst)):
+                        if lst[i] == lst[j]:
+                            count += 1
+                            lst[j]=change
+                    
+                        frequency[lst[i]] = count
+
+            return frequency
+
+
+        lst = ["apple", "banana", "apple", "orange", "banana", "grape", "apple", "mango",
+            "banana", "orange", "grape", "apple", "kiwi", "melon", "apple", "banana",
+            "grape", "melon", "kiwi", "apple", "banana", "orange", "grape", "mango"]
+
+        print(create_frequency_dict(lst))
+
+---------------------------------------------------------------------------------------------------------------
+Q 109: Merge Two Lists into a Dictionary with List Indices as Keys
+Write a function merge_lists_into_dict(list1, list2) that accepts two lists of equal length and merges them into a dictionary where the keys are the indices (0 to n-1) and the values are the elements from both lists.
+---------------------------------------------------------------------------------------------------------------
+
+        def merge_lists_into_dict(list1, list2):
+            dit = {}
+            count = 0
+            for i in list1:
+                dit[count] = i
+                count+=1
+            
+            for i in list2:
+                dit[count] = i
+                count+=1
+
+            return dit
+
+        l1 = [10,50,90,70,80]
+                
+        l2 = [20,40,50,80,90,10]
+
+        print(merge_lists_into_dict(l1,l2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 110: Count the Number of Even and Odd Numbers in a List
+Write a function count_even_odd(lst) that accepts a list of integers and returns a dictionary with the count of even numbers and odd numbers.
+---------------------------------------------------------------------------------------------------------------
+            
+        def count_even_odd(lst):
+            dit = {"Even":0,"Odd":0}
+            even = 0
+            odd = 0
+            for i in lst:
+                if i % 2 == 0:
+                    dit["Even"]+=1
+                else:
+                    dit["Odd"]+=1
+            return dit
+
+        data = [1,3,4,5,7,9,12,16]
+        print(count_even_odd(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 111: Check if a Dictionary is Empty
+Write a function is_empty(d) that accepts a dictionary and returns True if the dictionary is empty, otherwise False.
+---------------------------------------------------------------------------------------------------------------
+
+        def is_empty(d):
+            return True if len(d) == 0 else False
+
+        data = {
+                
+                }
+
+        print(is_empty(data))
+
+---------------------------------------------------------------------------------------------------------------
+Q 112: Remove Keys from Dictionary Based on a Condition
+Write a function remove_keys_by_condition(d, condition) that accepts a dictionary and removes the keys where the corresponding values satisfy a condition. For example, removing all keys with values greater than a specific threshold.
+---------------------------------------------------------------------------------------------------------------
+
+        def remove_keys_by_condition(d, condition):
+            chang = d.copy()
+            for k,v in chang.items():
+                if v <= condition:
+                    del d[k]
+            
+            return d
+
+        data = {
+                "f": 50,
+                "c": 10,
+                "g": 20,
+                "d": 100
+                }
+
+        condition = 20
+        print(remove_keys_by_condition(data,condition))
+
+---------------------------------------------------------------------------------------------------------------
+Q 113: Find the Union of Two Lists
+Write a function find_union(lst1, lst2) that accepts two lists and returns a new list that contains the union of both lists (all elements from both lists without duplicates).
+---------------------------------------------------------------------------------------------------------------
+
+        def find_union(lst1, lst2):
+
+            union = []
+
+            for i in lst1:
+                if i not in union:
+                    union.append(i)
+
+            for i in lst2:
+                if i not in union:
+                    union.append(i)   
+
+            return union
+
+
+        l1 = [10,50,90,70,80]
+                        
+        l2 = [20,40,50,80,90,10]
+
+        print(find_union(l1,l2))
+
+---------------------------------------------------------------------------------------------------------------
+Q 114: Create a Dictionary of Squares from a List
+Write a function create_square_dict(lst) that accepts a list of numbers and returns a dictionary where the keys are the numbers and the values are their squares.
+---------------------------------------------------------------------------------------------------------------
+
+        def create_square_dict(lst):
+            squr_dit = {}
+            for i in lst:
+                squr_dit[i]=i*i
+            
+            return squr_dit
+
+        l1 = [20,40,50,80,90,10]
+
+        print(create_square_dict(l1))
+        
+---------------------------------------------------------------------------------------------------------------
+Q 115: Convert a List to a Dictionary with Indexes as Keys
+Write a function list_to_dict(lst) that accepts a list and returns a dictionary where the keys are the indices of the list, and the values are the elements at those indices.
+---------------------------------------------------------------------------------------------------------------
+
+        def list_to_dict(lst):
+            li_dit = {}
+            for i in range(len(lst)):
+                li_dit[i]=lst[i]
+
+            return li_dit
+
+        l1 = [20,40,50,80,90,10]
+
+        print(list_to_dict(l1))
+        
+---------------------------------------------------------------------------------------------------------------
+Q 116: Read a File and Count Words
+Write a function count_words_in_file(filename) that accepts a file name, reads the file, and returns the total number of words in the file.
+---------------------------------------------------------------------------------------------------------------
