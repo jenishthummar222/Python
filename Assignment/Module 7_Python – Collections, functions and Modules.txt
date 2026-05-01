@@ -1,0 +1,792 @@
+-----------------------------------
+    1.  Accessing List  
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Understanding how to create and access elements in a list.
+
+                ~> using [] to create list 
+                ~> using list() to create list 
+            
+            Access :-
+                ~> using for loop to access element in list.
+                ~> using index to access element in list
+            
+
+        2. Indexing in lists (positive and negative indexing). 
+
+            ~> using Indexing to access data from the list.
+
+            Positive index :-
+                ~> it start 0 from left side to right side.
+
+            Nagative Index :-
+                ~> it start from -1 to right side to left side.
+
+        3. Slicing a list: accessing a range of elements. 
+
+            ~> so use full topic in list.
+            ~> using slicing to access range of data in elements.
+            ~> [start:end:iterate]
+    
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to create a list with elements of multiple 
+            data types (integers, strings, floats, etc.). 
+        
+            li = [10,"ram",22.22,None,True]
+            print(li)
+        
+        2> Write a Python program to access elements at different index positions. 
+
+            li = [10,"ram",22.22,None,True]
+
+            print(li[0])
+            print(li[1])
+            print(li[4])
+    
+    ===============
+        Practical Examples:  
+    ===============
+
+        1} Write a Python program to create a list of multiple data type elements. 
+
+            li = [10,"ram",22.22,None,True]
+            print(li)
+        
+        2} Write a Python program to find the length of a list using the len() function. 
+
+            print(len(li))
+
+-----------------------------------
+    2.  List Operations   
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Common list operations: concatenation, repetition, membership. 
+            
+            concatenation :-
+                ~> concate two string into one string 
+
+                list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+
+                result = list1 + list2
+                print(result)
+            
+            repetition :- 
+                ~> repete multiple time of list 
+
+                print(result *2)
+            
+            membership operators :-
+                ~> in & not in is membership operators 
+                ~> use chack elem exists in lits or not 
+
+                list1 = [1, 2, 3]
+
+                if 1 in list1:
+                    print("yess")
+                
+
+        
+        2. Understanding list methods like append(), insert(), remove(), pop(). 
+
+            append():-
+                ~> it use for append value in exists list.
+                ~> it add value at last position in list
+            
+            insert():-
+                ~> it use for add value in list as index vise.
+                ~> it's take two args 1. index, 2. value 
+
+            remove() :-
+                ~> it's remove value from list by value 
+            
+            pop():-
+                ~> it's remove value from last index.
+                ~> also give index to remove pertiqular value.
+
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to add elements to a list using insert() and append().
+
+            li = [10,33,45,20]
+
+            li.append(22)       # [10,33,45,20,22]
+            li.insert(0,999)    #[999,10,33,45,20,22]
+
+            print(li)
+
+        2> Write a Python program to remove elements from a list using pop() and remove(). 
+
+                li = [10,33,45,20]
+
+                li.remove(20)   # [10,33,45]
+                li.pop(0)       # [33,45]
+
+                print(li)
+
+
+    ===============
+        Practical Examples: 
+    ===============
+        1}  Write a Python program to update a list using insert() and append()
+
+                # original list
+                numbers = [10, 20, 30]
+
+                print("Original list:", numbers)
+
+                # using append() → adds at end
+                numbers.append(40)
+
+                # using insert() → adds at specific position
+                numbers.insert(1, 15)   # insert 15 at index 1
+
+                print("Updated list:", numbers)
+        
+        2}  Write a Python program to remove elements from a list using pop() and remove(). 
+
+                # original list
+                numbers = [10, 20, 30, 40]
+
+                print("Original list:", numbers)
+
+                # using pop() → removes by index
+                numbers.pop(2)   # removes element at index 2 (30)
+
+                # using remove() → removes by value
+                numbers.remove(20)
+
+                print("Updated list:", numbers)
+
+-----------------------------------
+    3.  Working with Lists   
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. iterating over a list using loops. 
+
+            ~> get elements ony by one from the list
+
+            numbers = [10, 20, 30, 40]
+
+            for num in numbers:
+                print(num)
+
+        2. Sorting and reversing a list using sort(), sorted(), and reverse(). 
+
+            sort():
+                ~> sort() list as Ascending order and Descending order 
+                ~> change original list.
+            
+            sorted() :
+                ~> not change in original list.
+            
+            reverse() :
+                ~> change original list.
+                ~> just reverse a list.            
+
+
+        3. Basic list manipulations: addition, deletion, updating, and slicing. 
+
+            Addition :-
+                ~> addition means add value in list.
+                ~> using append(),insert(),extend() to add value in list.
+            
+            deletion :-
+                ~> it means delete value from list.
+                ~> using pop(),remove() to delete value from list.
+            
+            updating :-
+                ~> multiple way to update a list or list value.
+                ~> using sort(),reverse(),index to update a value or list.
+            
+            slicing :-
+                ~> it's use to get a some reange of value.
+                ~> [start point : end point : iterate ]    
+                ~> start 0 with left and start -1 at right side.
+            
+    ===============
+        Lab: 
+    ===============
+        
+        1> Write a Python program to iterate over a list using a for loop. 
+
+            li = [10,50,22,99,88,66]
+
+            for i in li:
+                print(i)
+        
+        2> Write a Python program to sort a list using both sort() and sorted().
+
+            sort():-
+                li = [10,80,22,54,67,3,9,0]
+                li.sort()
+                print(li)
+            
+            sorted():-
+                li = [10,80,22,54,67,3,9,0]
+
+                l2 = sorted(li)
+
+                print(f"{li}\n{l2}")
+    
+    ===============
+        Practical Examples: 
+    ===============
+
+        1} Write a Python program to iterate through a list and print each element.
+
+            li = [10,80,22,54,67,3,9,0]
+
+            print(li[::1])
+        
+        2} Write a Python program to insert elements into an empty list using a for loop and append(). 
+
+            li = []
+
+            total = int(input("How Many item add in list:- "))
+
+            for i in range(total):
+                li.append(int(input(f"Enter Your {i} Element :- ")))
+
+            print(li)
+
+-----------------------------------
+    4.  Tuple
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Introduction to tuples, immutability. 
+
+            ~> tuple defined by (,) 
+                E.g :- tp = (10,)  # without , it's take normal variable.
+            ~> tuple is immutable because  once you difind tuple you not change value 
+            ~> tuple value are fix, only retrive a data not chande a data.
+
+        2. Creating and accessing elements in a tuple. 
+
+            ~>  tp = (10,20,50,60)  # create tuple 
+            ~> also use tuple()
+
+            Access :-
+                using loop 
+                for i in tp:
+                    print(i)
+                using index 
+                print(tp[0])
+
+        3. Basic operations with tuples: concatenation, repetition, membership. 
+
+            Concatenation :-
+
+                    t1 = (10,50,30)
+                    t2 = (20,40,60)
+                    print(t1 + t2)
+
+            repetition :-
+                t1 = (10,30,50)
+                print(t1 * 2)
+            
+            membership :-
+                t = (10, 20, 30)
+
+                print(20 in t)       # True
+                print(40 not in t)   # True
+    
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to create a tuple with multiple data types
+
+            t = (10,"jenish",20.22,None)
+            print(t)
+        
+        2> Write a Python program to concatenate two tuples. 
+
+            t1 = (10,50,30)
+            t2 = (20,40,60)
+            print(t1 + t2)
+
+    ===============
+        Practical Examples: 
+    ===============
+
+        1}  Write a Python program to convert a list into a tuple. 
+
+            li = [10,"je",20.22,None]
+
+            t1 = tuple(li)
+
+            print(t1)
+
+        2}  Write a Python program to create a tuple with multiple data types. 
+
+            t = (10,"jenish",20.22,None)
+            print(t)
+        
+        3}  Write a Python program to concatenate two tuples into one.
+
+            t1 = (10,50,30)
+            t2 = (20,40,60)
+            print(t1 + t2) 
+        
+        4} Write a Python program to access the value of the first index in a tuple.
+
+            t1 = (10,20,30,40)
+
+            print(t1[0])
+
+-----------------------------------
+    5.  Accessing Tuples 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+            1.  Accessing tuple elements using positive and negative indexing. 
+
+                    ~> Tuples use 0-based indexing (like lists)
+
+                        t = (10, 20, 30, 40, 50)
+
+                        # Positive indexing
+                        print(t[0])   # 10
+                        print(t[2])   # 30
+
+                        # Negative indexing
+                        print(t[-1])  # 50 (last element)
+                        print(t[-2])  # 40
+                    
+
+            2. Slicing a tuple to access ranges of elements. 
+
+                ~> Slicing a Tuple (Range of Elements)
+
+                Syntax:
+
+                    tuple[start : end : step]
+
+    ===============
+        Lab: 
+    ===============
+            1> Write a Python program to access values between index 1 and 5 in a tuple.
+
+                t = (10, 20, 30, 40, 50, 60, 70, 80)
+
+                print(t[1:5]) # 20,30,40,50
+
+            2> Write a Python program to access alternate values between index 1 and 5 in a tuple. 
+
+                t = (10, 20, 30, 40, 50, 60, 70, 80)
+
+                print(t[1:5:2]) # 20,40
+
+    ===============
+        Practical Examples: 
+    ===============
+            1} Write a Python program to access values between index 1 and 5 in a tuple. 
+
+                t = (10, 20, 30, 40, 50, 60, 70, 80)
+
+                print(t[1:5]) # 20,30,40,50
+            
+            2} Write a Python program to access the value from the last index in a tuple.
+
+                t = (10, 20, 30, 40, 50, 60, 70, 80)
+
+                print(t[-1::])
+
+-----------------------------------
+    6.  Dictionaries 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+            1. Introduction to dictionaries: key-value pairs.
+
+                ~> dictionarie is one type of collection which collect multiple type of value and object.
+                ~> it store value as key & value pairs.
+                ~> genrally key is identity of value.
+
+            2. Accessing, adding, updating, and deleting dictionary elements. 
+                Accessing :-
+
+                    ~> using for loop to accessing a dictionarie
+                        for k,v in dict.item():
+                            print(f"{k} = {v}")
+
+                    ~> using key
+                        print(dict[key])
+
+                Adding :-
+
+                        ~> dict[key] = value.
+
+                Updating :-
+                        ~> dict[key] = value  :-
+                            if key is not exists in main dictionarie that key is added.. other wise change a value.
+
+                Deleting :-
+                        ~> del dict[key] 
+
+            3. Dictionary methods like keys(), values(), and items().
+
+                key():-
+                    this method use for retrive a onlye key value.
+
+                Values() :-
+                    this method  use for retrive only values.
+                
+                items() :-
+                    this method use for  retrive key and values..
+    
+    ===============
+        Lab: 
+    ===============
+
+            1> Write a Python program to create a dictionary with 6 key-value pairs. 
+
+                    dit = {
+                        "a" : 10,
+                        "b" : 20,
+                        "c" : 30,
+                        "d" : 40,
+                        "e" : 50,
+                        "f" : 60
+                    }
+
+            
+            2> Write a Python program to access values using dictionary keys.
+                dit = {
+                        "a" : 10,
+                        "b" : 20,
+                        "c" : 30,
+                        "d" : 40,
+                        "e" : 50,
+                        "f" : 60
+                    }
+
+                    for k,v in dit.items():
+                        print(f"{k} = {v}")
+-----------------------------------
+    7.  Working with Dictionaries  
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+            1. Iterating over a dictionary using loops.
+
+                ~> using key and value to access a dictionary 
+
+                for k,v in dict.item():
+                    print(f"{k} = {v}")
+            
+            2. Merging two lists into a dictionary using loops or zip(). 
+
+                key = [1,2,3,4,5]
+                value = ["aa","bb","cc","dd","ee"]
+
+                dit = dict(zip(key,value))
+                print(dit)
+            
+            3. Counting occurrences of characters in a string using dictionaries. 
+
+                string = "hello i am python"
+
+                dit = {}
+
+                for st in string:
+                    
+                    if st not in dit:
+                        dit[st] = 1
+                    else:
+                        dit[st] += 1
+
+                print(dit)
+    
+    ===============
+        Lab: 
+    ===============
+            1> Write a Python program to update a value in a dictionary. 
+
+                dit = {
+                    "a":10,
+                    "b":20,
+                    "c":3
+                }
+
+                dit["c"] = 30
+                print(dit)
+            
+            2> Write a Python program to merge two lists into one dictionary using a loop. 
+
+                key = [1,2,3,4,5]
+                value = ["aa","bb","cc","dd","ee"]
+
+                dit = {}
+                for i in range(len(key)):
+                    dit[key[i]] = value[i]
+
+                print(dit)
+    
+    ===============
+        Practical Examples:
+    ===============
+
+            1} Write a Python program to update a value at a particular key in a dictionary.
+
+                dit = {
+                    "a":10,
+                    "b":20,
+                    "c":3
+                }
+
+                for i in dit:
+                    dit[i] = dit[i]*2
+
+                print(dit)
+            
+            2} Write a Python program to separate keys and values from a dictionary using 
+                keys() and values() methods.
+
+                    dit = {
+                        "a":10,
+                        "b":20,
+                        "c":30
+                    }
+
+                    key = []
+                    value = []
+
+                    for k,v in dit.items():
+                        key.append(k)
+                        value.append(v)
+
+                    print(key,value) 
+
+            3} Write a Python program to convert two lists into one dictionary using a for loop.
+
+                    key = [1,2,3,4,5]
+                    value = ["aa","bb","cc","dd","ee"]
+
+                    dit = {}
+                    for i in range(len(key)):
+                        dit[key[i]] = value[i]
+
+                    print(dit)
+
+            4}  Write a Python program to count how many times each character appears in a string.
+
+                    string = "hello i am python"
+
+                    dit = {}
+
+                    for st in string:
+                        
+                        if st not in dit:
+                            dit[st] = 1
+                        else:
+                            dit[st] += 1
+
+                    print(dit)
+
+-----------------------------------
+    8.  Functions  
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+            1. Defining functions in Python.
+
+                ~> using def key word to create a function.
+
+                def fun_nm(perameters):
+                    # code.
+                
+            
+            2. Different types of functions: with/without parameters, with/without return values. 
+
+                1] with parameters with return :
+
+                        def myFun(name):
+                            retrun name
+                
+                2] with parameters without retrun :
+
+                        def myFun(name):
+                            print(name)
+                
+                3] without parameters with retrun:
+                        def myFun():
+                            st = "ram"
+                            retrun st 
+                    
+                4] without parameters without retrun :
+                        def myFun():
+                            st = "ram"
+                            print(ram)
+
+            3. Anonymous functions (lambda functions). 
+
+                ~> A lambda function is a small anonymous function (a function without a name).
+
+                Syntax
+                lambda arguments : expression
+            
+    ===============
+        Lab: 
+    ===============
+
+            1> Write a Python program to create a function that takes a string as input and prints it.
+
+                def myFun(string):
+                    print(string)
+                
+                myFun("Hello Python.")
+            
+            2> Write a Python program to create a calculator using functions. 
+
+                def addition(num1,num2):
+                    return num1+num2
+
+                def subtraction(num1,num2):
+                    return num1-num2
+
+                def multipication(num1,num2):
+                    return num1*num2 
+
+                def division(num1,num2):
+                    return num1/num2 
+
+                print(addition(10,20))
+
+                print(subtraction(10,20))
+
+                print(multipication(10,20))
+
+                print(division(10,20))
+    
+    ===============
+        Practical Examples: 
+    ===============
+
+            1}  Write a Python program to create a parameterized function that takes two arguments and prints their sum.
+
+                    def addition(num1,num2):
+                        return num1+num2
+                    
+                    print(addition(20,2))
+
+            2} Write a Python program to create a lambda function with one expression. 
+
+                    data = lambda x : x*x
+
+                    print(data(5))
+            
+            3}  Write a Python program to create a lambda function with two expressions.
+
+                    data = lambda x,n : x**n
+
+                    print(data(5,2))
+
+-----------------------------------
+    9.  Modules  
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+            1. Introduction to Python modules and importing modules. 
+
+                ~> module are a tree type.
+                    1] Bulit in module.
+                    2] user defined module.
+                    3] thered party module.
+
+                ~> module is predefined library just import or install and you use it.
+
+                ~> import rendom   using import to use a module.
+            
+            2. Standard library modules: math, random.
+
+                math :-
+                    ~> it is bulit in module.
+                    ~> it's use for math equvation to solwe math problem.
+                    ~> import math 
+                
+                random :-
+                    ~> it is built in module.
+                    ~> it's use to generate a randome value from given range.
+                    ~> import random 
+            
+            3. Creating custom modules. 
+
+                ~> create custome folder 
+                ~> create __init__.py inside custome folder 
+                ~> create mod.py inside custome folder.
+                    def add(num1,num2):
+                    print(num1+num2)
+                ~> create demo.py custome folder.
+                    from custom.mod import add
+                    add(10,20)
+
+
+    ===============
+        Lab: 
+    ===============
+
+            1> Write a Python program to import the math module and use functions like sqrt(), ceil(), floor(). 
+            
+                    import math
+
+                    print(int(math.sqrt(81)))
+
+                    print(math.floor(22.50))
+
+                    print(math.ceil(22.50))
+
+            2> Write a Python program to generate random numbers using the random module.
+    
+                    import random 
+
+                    number = random.randint(1,100)
+
+                    print(number)
+
+
+
+
+
+
+    
+                 
+
+
+
+
+
+
+
+    
+    
+    
+
+

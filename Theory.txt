@@ -635,4 +635,60 @@ MODULE ::-
     =====================================================================================================
 
     2) User Defined Module ::-
-            ~> 
+            ~> which is made by user.
+
+    =====================================================================================================
+
+    3) Third PArty Module ::-
+            ~> which is not provided by python but design and developed by 3rd person and we can import as per need.
+            ~> to use 3rd party module.
+            ~> we have to use pip command.
+
+        Pip ::-
+            ~> stands for python index package and pip is a python package manager.
+            ~> using of pip we can install and unistall package.
+
+            E.g :-
+                pip install <packagename> or <module name> or <library>
+
+-----------------JK----------------------------- 27/04/2026 -----------------------------JK------------------------------------------JK----
+package ::-
+        ~> package is a collection of module and files we can use anywere from the program.
+
+        ~> in single language we can say that package is a group of modules.
+    
+        ~> create one folder and inside that folder create one blank file.
+
+        __int__.py ::-
+
+                ~> this is on file dose not conatain any content but it is reperesent any folder as packages.
+
+-----------------JK----------------------------- 29/04/2026 -----------------------------JK------------------------------------------JK----
+iterator :-
+        ~> it is an object which is though iterate each element line by line.
+        ~> list, tuple dictionary all our iterator. 
+
+Generator :-
+
+        ~> it is a special type of function which is generate some state of value and store in a one place and return as per requirement.
+        ~> normal function perform any operstion and return value but Generator dose not return it , just store value and save state and return using of yield keyword.
+    
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ JK =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+JK=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+File Handling ::-
+
+        ~> when we want to perform any operations and wanr=t to store operation in such kind of file at that time we use file handling concept.
+        ~> in python we can perform 
+            -> open & close file using different different file mode.
+        
+        Modes ::-
+            ~> "r" :- read mode
+            ~> "w" :- write mode
+            ~> "a" :- append mode 
+
+            ~> "x" :- create blank file 
+            ~> "b" :- binary mode(when we want to work with image kind of file.)
+
+        Syntax :-
+            file_obj = open("file_nm","mode")
+        

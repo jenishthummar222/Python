@@ -1,0 +1,973 @@
+
+-----------------------------------
+    1. Introduction to Python
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Introduction to Python
+
+                Python is a high-level, simple, and interpreted programming language.
+
+                High-level :- Easy to read and understand (like English)
+                Interpreted :- Runs line-by-line (no need to compile)
+                Used in web development, AI, data science, automation, etc.
+        
+        2. History of Python
+
+                Created by Guido van Rossum
+                Released in 1991
+        
+        3. Advantages of Python
+
+                Easy to learn (simple syntax)
+                Less code compared to other languages
+                Large community support
+                Works on all platforms (Windows, Mac, Linux)
+                Powerful libraries (for AI, ML, etc.)
+
+        4. Installing Python & Setup
+
+            You can use:-
+
+                Anaconda :- Best for data science
+                PyCharm :- Professional coding IDE
+                Visual Studio Code :- Lightweight and popular
+
+            Steps:-
+
+                Download Python from official website
+                Install it (check "Add to PATH")
+                Install editor (VS Code / PyCharm / Anaconda)
+                Start coding
+        
+        5. First Python Program
+
+                print("Hello, World!")
+    
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program that prints "Hello, World!". 
+
+                print("Hello, World!") 
+
+        2> Set up Python on your local machine and write a program to display your name. 
+
+                print("My Name Is JENISH")
+
+-----------------------------------
+    2. Programming Style 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. What is PEP 8?
+
+                PEP 8 is the official style guide for Python code.
+
+                It tells you how to write clean, readable, and consistent code.
+        
+        2. Indentation, comments, and naming conventions in Python. 
+
+            Indentation :-
+                ~> Python uses indentation instead of {} to define blocks.
+                ~> {} is not use in python.
+                ~> use 4 space for indentation.
+
+                E.g :- 
+                    if True:
+                        print("Hello")
+            
+            
+            Comments :-
+                ~> python have two types of comments single line & multi line.
+
+                Single Line :- using # (hase)
+                Multi Line :- using """ """  (triple invated comma)     
+
+            Naming Conventions :-
+ 
+                ~>  Variable :-	user_name
+                ~>  Function :-	calculate_total()
+                ~>  Class	 :- StudentData
+                ~>  Constant :-	MAX_LIMIT
+
+        3. Writing readable and maintainable code.
+
+            good code:-
+                def calculate_total(price, tax):
+                    return price + tax
+
+            Bad Code:
+                    def ct(p,t):return p+t
+    
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program that demonstrates the correct use of indentation, comments, and variables following PEP 8 guidelines. 
+
+            # Program to check whether a number is even or odd
+
+            def check_even_odd(number):
+                """Return whether the number is even or odd."""
+                if number % 2 == 0:
+                    return "Even"
+                else:
+                    return "Odd"
+
+
+            # Main program
+            num = int(input("Enter a number: "))
+
+            result = check_even_odd(num)
+
+            print("The number is:", result)
+
+-----------------------------------
+    3. Core Python Concepts 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets. 
+
+            Data Type :-
+                ~> manly use for store verius type of data in one variable.
+
+                integer :-
+                    ~> print(type(22))   # store int type data
+                
+                float :-
+                    ~> print(type(22.5))
+                
+                string :-
+                    ~> print(type("hello"))
+                
+                list :- 
+                    ~> print(type([10,20]))
+                
+                tuple :-
+                    ~> print(type((10,20)))
+                
+                set :- 
+                    print(type({10,20}))
+                
+                dictionarie :-
+                    ~> print(type({"name":"ram"}))
+        
+        2. Python variables and memory allocation. 
+
+            Variable :-
+                ~> it's one type of containar, store a one type of data in container that's call variable.
+
+            Memory Allocation :-
+                ~> all variable store in one specific space and that space have address it's call memory allocation.
+
+        3. Python operators: arithmetic, comparison, logical, bitwise.  
+
+            1. Arithmetic Operators
+
+                Used for basic math
+
+                a = 10
+                b = 3
+
+                print(a + b)   # 13
+                print(a - b)   # 7
+                print(a * b)   # 30
+                print(a / b)   # 3.33
+                print(a % b)   # 1 (remainder)
+                print(a ** b)  # 1000 (power)
+
+            2. Comparison Operators 
+
+                Used to compare values (returns True/False)
+
+                a = 10
+                b = 5
+
+                print(a == b)  # False
+                print(a != b)  # True
+                print(a > b)   # True
+                print(a < b)   # False
+
+            3. Logical Operators 
+
+                Used to combine conditions
+
+                a = 10
+
+                print(a > 5 and a < 15)  # True
+                print(a > 5 or a < 5)    # True
+                print(not(a > 5))        # False
+
+            4. Bitwise Operators 
+
+                Work on binary (bits)
+
+                a = 5   # 0101
+                b = 3   # 0011
+
+                print(a & b)  # 1 (AND)
+                print(a | b)  # 7 (OR)
+                print(a ^ b)  # 6 (XOR)
+    
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to demonstrate the creation of variables and different data types.
+
+            var = 10
+            print(var)
+            var = "ram"
+            print(var)
+        
+        2> Practical Example 1: How does the Python code structure work? 
+
+            # Program to check whether a number is even or odd
+
+            def check_positive(number):
+                """Return whether the number is even or odd."""
+                if number > 0:
+                    return "Positive"
+                else:
+                    return "Negative"
+
+
+            # Main program
+            num = int(input("Enter a number: "))
+
+            result = check_positive(num)
+
+            print("The number is:", result)
+        
+        3>  Practical Example 2: How to create variables in Python? 
+
+            name = "Jenish"        # string
+            age = 20               # integer
+            height = 5.8           # float
+            is_student = True      # boolean
+        
+        4> Practical Example 3: How to take user input using the input() function. 
+
+            user_name = input("Enter your name: ")
+            user_age = int(input("Enter your age: "))
+
+            print("Hello", user_name)
+            print("Your age is", user_age)
+        
+        5> Practical Example 4: How to check the type of a variable dynamically using type(). 
+
+            print("Type of name:", type(name))
+            print("Type of age:", type(age))
+            print("Type of height:", type(height))
+            print("Type of is_student:", type(is_student))
+
+-----------------------------------
+    4. Conditional Statements
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Introduction to conditional statements: if, else, elif. 
+
+            if :-
+                ~> it is use chack only ture value.
+            
+                E.g :-
+                
+                    if( 5 > 0):
+                        True
+            if .. else :-
+                ~> check True And False value.
+
+                E.g :-
+                    if(5>0):
+                        True
+                    else:
+                        False 
+            Elif :-
+                ~> it's use check multiple condition.
+
+                E.g :-
+                    if(5 == 0):
+                        print(f"5 equal to zero ") 
+                    elif(5<0):
+                        print("5 is positive")
+                    else:
+                        print("5 is negative")
+
+        2. Nested if-else conditions. 
+
+            ~> one if inside another if that's call nested if 
+
+            Syntax :-
+                if condition1:
+                    if condition2:
+                        # code
+                    else:
+                        # code
+                else:
+                    # code
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to find greater and less than a number using if_else. 
+
+            num1 = int(input("Enter Number 1 :- "))
+                num2 = int(input("Enter Number 2 :- "))
+
+                if (num1 > num2):
+                    print(f"{num1} is grater Than {num2}")
+                else :
+                    print(f"{num2} is grater Than {num1}")
+        
+        2> Write a Python program to check if a number is prime using if_else. 
+
+            def prime_number(number):
+                for i in range(2,number):
+                    if number % i == 0:
+                        return "Not A Prime Number"
+                return "Prime Number"
+
+
+            num1 = int(input("Enter Number 1 :- "))
+
+            print(prime_number(num1))
+        
+        3> Write a Python program to calculate grades based on percentage using if-else ladder. 
+
+            marks = int(input("Enter your marks :- "))
+
+            if marks<=100 and marks > 90:
+                print("Grade A")
+            elif marks<=90 and marks > 80:
+                print("Grade B")
+            elif marks<=80 and marks > 70:
+                print("Grade C")
+            elif marks<=70 and marks > 60:
+                print("Grade D")
+            else:
+                print("Fail")
+        
+        4> Write a Python program to check if a person is eligible to donate blood using a nested if.
+
+            age = int(input("Enter your age: "))
+            weight = float(input("Enter your weight (kg): "))
+
+            if age >= 18:
+                if weight >= 50:
+                    print("You are eligible to donate blood.")
+                else:
+                    print("Not eligible: Weight must be at least 50 kg.")
+            else:
+                print("Not eligible: Age must be at least 18 years.")
+
+-----------------------------------
+    5. Looping (For, While)
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Introduction to for and while loops. 
+
+            for loop :-
+                ~> when print & retry data from any collections than use for loop.
+
+                Syntax:-
+                    for i in range(start,end,update):
+                        #code
+            
+            while loop :-
+                ~> when you don't know how many time to retry to data than you can use while loop.
+
+                Syntax :-
+                    while condtion:
+                        #code
+
+
+        2. How loops work in Python. 
+
+            1. Start loop
+            2. Check condition / get next value
+            3. Execute code block
+            4. Repeat until condition ends
+
+
+        3. Using loops with collections (lists, tuples, etc.).  
+
+            l1 = [10,50,30,60,70]
+            t1 = (50,60,70,80,99)
+
+            for i in l1:
+                print(i,end=" ") 
+            print() 
+            for j in t1:
+                print(j,end=" ") 
+    
+    ===============
+        Lab: 
+    ===============
+        1>  Write a Python program to print each fruit in a list using a simple for loop. 
+            List1 = ['apple', 'banana', 'mango']
+
+            for fruit in List1:
+                print(fruit,end=" ")
+        
+        2> Write a Python program to find the length of each string in List1. 
+            List1 = ['apple', 'banana', 'mango']
+
+            for fruite in List1:
+                print(f"{fruite} length is {len(fruite)}")
+        
+        3>  Write a Python program to find a specific string in the list using a simple for loop and if condition. 
+            List1 = ['apple', 'banana', 'mango']
+
+            st = input("Enter Your String :- ")
+
+            flag = 0
+            for fruite in List1:
+                if fruite == st :
+                    flag = 1        
+                    break
+                
+            if flag == 1:
+                print(f"{st} in list")
+            else:    
+                print(f"{st} not in list")
+        
+        4>  Print this pattern using nested for loop:
+            
+            * 
+            ** 
+            *** 
+            **** 
+            ***** 
+
+            for i in range(1,6):
+                for j in range(i):
+                    print("*",end=" ")
+                print()
+
+-----------------------------------
+    6. Generators and Iterators
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+        
+        1. Understanding how generators work in Python. 
+
+                ~> A generator is a function that returns values one at a time, instead of all at once.
+
+                E.g :-
+                    def myFun():
+                        yield 1
+                        yield 2
+                        yield 3
+                    fun = myFun()
+                    print(next(fun))
+
+                    print(next(fun))
+
+                    print(next(fun))
+
+        2. Difference between yield and return. 
+
+            yield :-
+                ~> Returns multiple values
+                ~> Generates one by one
+                ~> Function pauses & resumes
+            
+            return :-
+                ~> Returns once
+                ~> Stores full result
+                ~> Function ends 
+
+
+        3. Understanding iterators and creating custom iterators. 
+
+            iterator :-
+                ~> it is meanly use for iterate a data from collection as one by one.
+
+                ~> genrally using for loop to do this work.
+                ~> but create custome iterator also..
+
+                Syntax :-
+                    iterator = iter(list)
+                    print(next(iterator))   # 1st value                 
+                    print(next(iterator))   # 2ed value 
+    
+    ===============
+        Lab: 
+    ===============
+        1> Write a generator function that generates the first 10 even numbers.
+            
+            def myFun(number):
+                for i in range(1,(number+1)*2):
+                    if i %2 == 0:
+                        yield i 
+
+            even = myFun(10)
+
+            for i in even:
+                print(i,end=" ")
+
+        2> Write a Python program that uses a custom iterator to iterate over a list of integers.
+            li = [20,50,22,99,55]
+
+            iterator = iter(li)
+
+            print(next(iterator))
+            print(next(iterator))
+            print(next(iterator))
+            print(next(iterator))
+            print(next(iterator))
+
+-----------------------------------
+    7. Functions and Methods 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Defining and calling functions in Python. 
+
+            ~> create a function thats is define function, when you use a function that is calling.
+                def fun_nm():   # define
+                    #code
+                
+                fun_nm()        #calling
+            
+        2. Function arguments (positional, keyword, default). 
+
+            Positinal Args :-
+
+                    ~> set args in position wise that is positional args.
+
+                    E.g :-
+
+                    def myFun(name,age):
+                        print(name,age) 
+                    
+                    myFun("ram",50)  
+
+            Keyword Args:-
+                    ~> set args with key.
+
+                    E.g :-
+                    
+                    myFun(name="ram",age=50)
+            
+            default :-
+                    ~> set defualt value at function creation time.
+
+                    E.g :-
+
+                        def myFun(name,age=50):
+                            print(name,age) 
+
+                        myFun("ram")
+
+        3. Scope of variables in Python. 
+
+                ~> if you create one function and create variable inside function ,
+                    that variable not access outside the function
+                ~> if you create variable as global variable you can use in function 
+
+
+        4. Built-in methods for strings, lists, etc. 
+
+            String ::-
+                name = "PYthon pROGRAming"
+
+                print(name.upper()) #PYTHON PROGRAMING
+                print(name.lower()) #python programing
+
+                print(name.capitalize()) #Python programing
+                print(name.title()) #Python Programing
+
+                print(name.split()) #['PYthon', 'pROGRAming']
+            
+            list ::-
+
+                l1 = [10,20,30,50,22,99]
+                l1.append(45)
+                l1.extend([92,29])
+                l1.remove(29)
+                l1.pop(0)
+                l1.clear()
+                l1.reverse()
+                l1.sort()
+
+    ===============
+        Lab: 
+    ===============
+        1> Write a Python program to print "Hello" using a string. 
+
+            print("Hello")
+        
+        2> Write a Python program to allocate a string to a variable and print it. 
+
+            st = "hii, i am python"
+            print(st) 
+        
+        3>  Write a Python program to print a string using triple quotes. 
+
+            triple = """
+                        Hello, 
+                            I am Python 
+                    """
+            print(triple)
+        
+        4> Write a Python program to access the first character of a string using index value.
+
+            st = "i am python"
+
+            print(st[0])
+
+        5>  Write a Python program to access the string from the second position onwards using slicing. 
+
+            text = "Hello World"
+
+            result = text[1:]
+
+            print(result)
+        
+        6>  Write a Python program to access a string up to the fifth character. 
+
+            text = "Hello World"
+
+            result = text[:5]
+
+            print(result)
+        
+        7>  Write a Python program to print the substring between index values 1 and 4. 
+
+            text = "Hello World"
+
+            result = text[1:4]
+
+            print(result)
+        
+        8> Write a Python program to print a string from the last character. 
+
+            text = "Hello World"
+
+            result = text[::]
+
+            print(result)
+        
+        9> Write a Python program to print every alternate character from the string starting from index 1. 
+
+
+            text = "Hello World"
+
+            result = text[1::2]
+
+            print(result)
+        
+-----------------------------------
+    8.  Control Statements (Break, Continue, Pass) 
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Understanding the role of break, continue, and pass in Python loops. 
+
+            Break :-
+                ~> manly use in loop for stop a iteration.
+
+                ~> using break 
+            
+            Continue :-
+                ~> manly use in loop for skip the one iteration.
+                ~> using continue 
+            
+            pass :-
+                ~> it's use to blank block in if / loop like this 
+                ~> without pass you note leave a blank block.
+                E.g :-
+
+                    if (condition):
+                        pass
+                    else:
+                        pass
+    
+    ===============
+        Lab: 
+    ===============
+
+        1>  Write a Python program to skip 'banana' in a list using the continue statement. 
+            List1 = ['apple', 'banana', 'mango'] 
+
+            for fruite in List1:
+                if fruite == "banana":
+                    continue
+                print(fruite)
+        
+        2>  Write a Python program to stop the loop once 'banana' is found using the break statement.
+
+            List1 = ['apple', 'banana', 'mango'] 
+            for fruite in List1:
+                if fruite == "banana":
+                    break
+                print(fruite) 
+
+-----------------------------------
+    9.  String Manipulation  
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+
+        1. Understanding how to access and manipulate strings. 
+
+            Access :-
+                Indexing : get one character
+                Slicing : get part of string
+                Loop : iterate characters
+
+                ~> using these you are access a list..
+            
+            manipulate :-
+
+                ~> using comman method to do manipulate a string.
+                E.g -
+                    text = "   hello   "
+
+                    print(text.upper())   # HELLO
+                    print(text.lower())   # hello
+                    print(text.title())   # Hello
+                    
+                    print(text.strip())   # "Hello"   # remove space.
+ 
+                    text.replace("hello", "Python")  # replace string 
+
+
+
+        2. Basic operations: concatenation, repetition, string methods (upper(), lower(), etc.). 
+
+            concatenation:-
+                ~> concate one string to another string 
+                E.g :-
+                    st1 = "hello"
+                    st2 = "word"
+                    
+                    st1 += " "+st2 
+                    print(st1)
+            
+            repetition :-
+                ~> count repeting character in string 
+
+                E.g :-
+                    text = "banana"
+
+                    print(text.count("a")) # 3
+            
+            upper():-
+
+                convert lower character to upper character
+                E.g :-
+                    text = "banana"
+                    print(text.upper())
+            
+            lower():-
+
+                convert upeer character to lower character
+                E.g :-
+                    text = "BANANA"
+                    print(text.lower())
+
+
+        3. String slicing.
+
+            ~> this topic is so important using slicing do divide string to characters and access this.
+            ~> in slicing start at 0 
+            ~> if you do revers it's start from -1
+
+            e.g :-
+                text = "banana"
+                print(text[0:2])  # it's get 0 to 1 value :-[ba] not take 2 
+
+    ===============
+        Lab: 
+    ===============
+
+        1> Write a Python program to demonstrate string slicing. 
+
+            text = "Hello World"
+
+            # 1. Basic slicing
+            print("Original String:", text)
+            print("text[0:5]  ->", text[0:5])   # Hello
+            print("text[6:11] ->", text[6:11])  # World
+
+            # 2. From start or end
+            print("text[:5]   ->", text[:5])    # Hello
+            print("text[6:]   ->", text[6:])    # World
+
+            # 3. Using step
+            print("text[::2]  ->", text[::2])   # HloWrd
+            print("text[1::2] ->", text[1::2])  # el ol
+
+            # 4. Negative slicing (reverse)
+            print("text[::-1] ->", text[::-1])  # dlroW olleH
+        
+        2> Write a Python program that manipulates and prints strings using various string methods. 
+
+            text = "  hello world  "
+
+            # Original string
+            print("Original String:", text)
+
+            # 1. Remove spaces
+            print("Strip:", text.strip())
+
+            # 2. Convert case
+            print("Upper:", text.upper())
+            print("Lower:", text.lower())
+            print("Title:", text.title())
+
+            # 3. Replace words
+            print("Replace:", text.replace("world", "Python"))
+
+            # 4. Find position
+            print("Find 'world':", text.find("world"))
+
+            # 5. Count characters
+            print("Count 'l':", text.count("l"))
+
+            # 6. Check start and end
+            print("Starts with '  he':", text.startswith("  he"))
+            print("Ends with 'ld  ':", text.endswith("ld  "))
+
+            # 7. Split string
+            words = text.split()
+            print("Split:", words)
+
+-----------------------------------
+    10.  Advanced Python (map(), reduce(), filter(), Closures and Decorators)
+-----------------------------------
+    ===============
+        Theory: 
+    ===============
+        1. How functional programming works in Python. 
+
+            ~> Functions are first-class objects
+            ~> Use lambda, map, filter, reduce
+            ~> Prefer pure functions
+            ~> Avoid changing data
+
+        2. Using map(), reduce(), and filter() functions for processing data.
+
+            map():-
+
+                ~> it's use for get data from the collections lik list , tuple, set, dectionary.
+                ~> using map get one by one data and do some operation on data.
+                ~> it's retrive all data             
+                ~> map() needs two args 1. function, 2.iterartor.
+            
+            filter():-
+                ~> it's use for filter data from list
+                ~> when condtionis are True which data is retrun other wise not retrun any think.
+
+            reduce():-
+
+                ~> it's use for reduce a code 
+                ~> it's get 1st and 2ed data from list .
+                ~> it's manly use for arithmatic operations.
+                ~> use to functools library to use reduce 
+                    -> from functools import reduce
+
+        3. Introduction to closures and decorators.  
+            
+            closures
+                ~> A closure is a function that is defined inside another function
+                ~> Remembers variables from the outer function even after it finishes
+
+                E.g :-
+
+                def outer(msg):
+                        def inner():
+                            print(msg)   # uses outer variable
+                        return inner
+
+                    func = outer("Hello")
+                    func()
+
+            Decorators :-
+                ~> wrap main function to using another function.
+                ~> Adds extra functionality without changing original code
+                ~> use @decorators on main function.
+
+                E.g :-
+
+                    def my_decorator(func):
+                        def wrapper():
+                            print("Before function")
+                            func()
+                            print("After function")
+                        return wrapper
+
+                    @my_decorator
+                    def say_hello():
+                        print("Hello")
+
+                    say_hello()
+                
+    ===============
+        Lab: 
+    ===============   
+
+        1> Write a Python program to apply the map() function to square a list of numbers.
+
+            li = [20,50,80,22,99]
+
+            def square(number):
+                return number * number 
+
+            data = list(map(square, li))
+
+            print(data)
+        
+        2> Write a Python program that uses reduce() to find the product of a list of numbers. 
+
+            from functools import reduce
+
+            li = [1,2,3,4]
+
+            data = reduce(lambda x,y : x*y, li)
+
+            print(data)
+        
+        3> Write a Python program that filters out even numbers using the filter() function.
+
+            li = [10,33,45,20]
+
+            data = list(filter(lambda x : x % 2 == 0,li))
+
+            print(data)
+
+
+
+
+
+
+                        
+
+                                
+
+
+                                

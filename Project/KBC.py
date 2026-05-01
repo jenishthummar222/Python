@@ -131,8 +131,7 @@ for i in question:
                         match lifeLine:
                             case 1:
                                 ans = check_answer(ask_friend(set_answer,list(life_line.keys())[lifeLine-1]),set_answer)
-                                balance = player_balance(ans,balance)
-                                
+                                balance = player_balance(ans,balance)                                
                                 break
                             case 2:
                                 pass 
